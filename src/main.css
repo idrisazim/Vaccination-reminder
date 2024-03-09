@@ -80,13 +80,14 @@ p {
 
 @media (min-width: 320px) and (max-width: 999px) {
 	body {
-		
-	  flex-direction: column;
-	  background-image: url("bgm.PNG"); /* Add the path to your mobile background image */
-	}
+		background-image: url("bgm.PNG");
+        background-repeat: no-repeat;
+        background-size: cover; /* Updated to cover the entire viewport */
+        margin: 0;
+        padding: 0;}
   
 	.card {
-	  min-width: 90%;
+	  min-width: 50%;
 	  margin: 5% auto;
 	  padding: 5%;
 	}
