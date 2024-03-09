@@ -75,3 +75,21 @@ p {
 	padding-top: 7%;
 	font-size: larger;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #currentAge {
+        width: 90%;
+    }
+}
