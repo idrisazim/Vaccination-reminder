@@ -63,6 +63,9 @@ login.addEventListener("click", function (event) {
     // ...
 
     alert('User logged in!');
+
+    // Redirect to another HTML page upon successful login
+    window.location.href = 'src/main.html';
   })
   .catch((error) => {
     const errorCode = error.code;
