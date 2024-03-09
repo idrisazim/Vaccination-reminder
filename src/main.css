@@ -75,3 +75,39 @@ p {
 	padding-top: 7%;
 	font-size: larger;
 }
+
+@media only screen and (max-width: 600px) {
+	body {
+	  flex-direction: column;
+	  background-image: url("bgm.PNG"); /* Add the path to your mobile background image */
+	}
+  
+	.card {
+	  min-width: 90%;
+	  margin: 5% auto;
+	  padding: 5%;
+	}
+  
+	header h1 {
+	  font-size: x-large;
+	}
+  
+	label {
+	  font-size: medium;
+	  margin: 3%;
+	}
+  
+	button {
+	  font-size: medium;
+	  padding: 3%;
+	}
+  
+	input, #inputDob, p, #currentAge {
+	  width: 100%;
+	  margin: 3% 0;
+	}
+  
+	#currentAge {
+	  margin-top: 10%;
+	}
+  }

@@ -182,3 +182,45 @@ form .btn input[type="submit"]{
   font-weight: 500;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("bg2.jpg"); /* Add the path to your mobile background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .wrapper .title-text {
+    width: 100%;
+  }
+
+  .wrapper .title {
+    width: 100%;
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .form-inner form {
+    width: 100%;
+  }
+
+  .form-inner form .field {
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .form-inner form .signup-link {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .form-inner form .btn {
+    height: 45px; /* Adjust height for smaller screens */
+  }
+
+  .form-inner form .btn input[type="submit"] {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}

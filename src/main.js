@@ -33,7 +33,7 @@ function getDOB() {
         displayVaccinationReminder(9, dob, "KKK İlave doz ");
     }
     if (diffMonths <= 12) {
-        displayVaccinationReminder(12, dob, "KPA Rapel, KKK 1 doz vaccinations ");
+        displayVaccinationReminder(12, dob, "KPA Rapel, KKK 1 doz ");
     }
     if (diffMonths <= 18) {
         displayVaccinationReminder(18, dob, "DABT-İPA-Hib Rapel, OPA 2 doz, Hepatit A 1 doz ");
