@@ -80,6 +80,7 @@ p {
 
 @media (min-width: 320px) and (max-width: 999px) {
 	body {
+		
 	  flex-direction: column;
 	  background-image: url("bgm.PNG"); /* Add the path to your mobile background image */
 	}
