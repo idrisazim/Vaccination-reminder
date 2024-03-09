@@ -10,6 +10,8 @@ body {
     background-size: cover;
 }
 
+
+
 /* Defining card properties */
 .card {
 	min-width: 30%;
@@ -76,7 +78,7 @@ p {
 	font-size: larger;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 999px) {
 	body {
 	  flex-direction: column;
 	  background-image: url("bgm.PNG"); /* Add the path to your mobile background image */

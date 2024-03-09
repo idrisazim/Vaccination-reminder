@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 html,body{
   display: grid;
   height: 100%;
@@ -183,7 +184,7 @@ form .btn input[type="submit"]{
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 999px) {
   body {
     background: url("bg2.jpg"); /* Add the path to your mobile background image */
     background-repeat: no-repeat;
