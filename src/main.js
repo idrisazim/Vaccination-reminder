@@ -1,75 +1,71 @@
 // Define funtion to get calculated Age
 function getDOB() {
-  // Get the input values
-  var dob = new Date(document.getElementById("inputDob").value);
-  var currentDate = new Date(document.getElementById("cdate").value);
+    // Get the input values
+    var dob = new Date(document.getElementById("inputDob").value);
+    var currentDate = new Date(document.getElementById("cdate").value);
 
-  var options = { year: "numeric", month: "long", day: "numeric" };
-  var formattedDob = dob.toLocaleDateString("tr-TR", options);
-  var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
+    // Calculate the difference in milliseconds
+    var diffTime = Math.abs(currentDate - dob);
 
-  // Calculate the difference in months
-  var diffMonths =
-    (currentDate.getFullYear() - dob.getFullYear()) * 12 +
-    currentDate.getMonth() -
-    dob.getMonth();
+    // Convert the difference to days
+    var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  // Display the age
-  document.getElementById("currentAge").innerHTML =
-    "Çocuğun yaşı:  " +
-    Math.floor(diffMonths / 12) +
-    " " +
-    "yıl " +
-    " " +
-    (diffMonths % 12) +
-    " ay ve " +
-    " " +
-    currentDate.getDate() +
-    " günlük." +
-    "<br/>";
-  if (diffMonths <= 0) {
-    alert("en acil zamanda Hepatit B 1 doz aşısını yaptırınız");
-    displayVaccinationReminder(0, dob, "Hepatit B 1 doz ");
-  }
-  if (diffMonths <= 1) {
-    displayVaccinationReminder(1, dob, "Hepatit B 2 doz ");
-  }
-  if (diffMonths <= 2) {
-    displayVaccinationReminder(2, dob, "BCG(Verem) ");
-  }
-  if (diffMonths <= 4) {
-    displayVaccinationReminder(4, dob, "DABT-İPA-Hib, KPA ");
-  }
-  if (diffMonths <= 6) {
-    displayVaccinationReminder(
-      6,
-      dob,
-      "Hepatit B 2 doz, DABT-İPA-Hib 2 doz, OPA 1 doz "
-    );
-  }
-  if (diffMonths <= 9) {
-    displayVaccinationReminder(9, dob, "KKK İlave doz ");
-  }
-  if (diffMonths <= 12) {
-    displayVaccinationReminder(12, dob, "KPA Rapel, KKK 1 doz ");
-  }
-  if (diffMonths <= 18) {
-    displayVaccinationReminder(
-      18,
-      dob,
-      "DABT-İPA-Hib Rapel, OPA 2 doz, Hepatit A 1 doz "
-    );
-  }
-  if (diffMonths <= 24) {
-    displayVaccinationReminder(24, dob, "Hepatit A 2 doz ");
-  }
-  if (diffMonths <= 48) {
-    displayVaccinationReminder(48, dob, "KKK 2 doz, DABT-İPA 1 doz ");
-  }
-  if (diffMonths <= 156) {
-    displayVaccinationReminder(156, dob, "Td Rapel ");
-  }
+    // Display the age
+    document.getElementById("currentAge").innerHTML =
+        "Çocuğun yaşı:  " +
+        Math.floor(diffDays / 365) +
+        " yıl " +
+        Math.floor((diffDays % 365) / 30) +
+        " ay ve " +
+        (diffDays % 30) +
+        " gün." +
+        "<br/>";
+
+    // Display vaccination reminders based on the age in days
+    if (diffDays <= 0) {
+        alert("En acil zamanda Hepatit B 1 doz aşısını yaptırınız");
+        displayVaccinationReminder(0, dob, "Hepatit B 1 doz ");
+    }
+    if (diffDays <= 30) {
+        displayVaccinationReminder(30, dob, "Hepatit B 2 doz ");
+    }
+    if (diffDays <= 60) {
+        displayVaccinationReminder(60, dob, "BCG(Verem) ");
+    }
+    if (diffDays <= 120) {
+        displayVaccinationReminder(120, dob, "DABT-İPA-Hib, KPA ");
+    }
+    if (diffDays <= 180) {
+        displayVaccinationReminder(
+            180,
+            dob,
+            "Hepatit B 2 doz, DABT-İPA-Hib 2 doz, OPA 1 doz "
+        );
+    }
+    if (diffDays <= 270) {
+        displayVaccinationReminder(270, dob, "KKK İlave doz ");
+    }
+    if (diffDays <= 365) {
+        displayVaccinationReminder(365, dob, "KPA Rapel, KKK 1 doz ");
+    }
+    if (diffDays <= 540) {
+        displayVaccinationReminder(
+            540,
+            dob,
+            "DABT-İPA-Hib Rapel, OPA 2 doz, Hepatit A 1 doz "
+        );
+    }
+    if (diffDays <= 720) {
+        displayVaccinationReminder(720, dob, "Hepatit A 2 doz ");
+    }
+    if (diffDays <= 1440) {
+        displayVaccinationReminder(1440, dob, "KKK 2 doz, DABT-İPA 1 doz ");
+    }
+    if (diffDays <= 4680) {
+        displayVaccinationReminder(4680, dob, "Td Rapel ");
+    }
 }
+
 
 function checkup() {
     document.getElementById("currentAge").innerHTML = "";
@@ -168,7 +164,7 @@ function percentile() {
     "<br/>";
 }
 
-function displayVaccinationReminder(months, dob, vaccineName) {
+function displayFutureVaccinationReminder(months, dob, vaccineName) {
   // Calculate the date for the vaccination reminder
   var vaccinationDate = new Date(dob);
   vaccinationDate.setMonth(vaccinationDate.getMonth() + months);
@@ -191,6 +187,8 @@ function displayVaccinationReminder(months, dob, vaccineName) {
     "**" +
     "<br/>";
 }
+
+
 
 function age() {
   var dob = new Date(document.getElementById("inputDob").value);

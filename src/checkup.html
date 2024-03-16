@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+	<title>Sağlık kontrolü hatırlatma</title>
+    <link rel='stylesheet'><link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="card">
+		<header>
+			<h1>Sağlık kontrolü hatırlatma</h1>
+		</header>
+        <div class="asi">
+		<div>
+			<label>Çocuğun doğum tarihini:</label>
+
+			<input id="inputDob"
+				type="date"
+				value="2024-01-01" />
+		</div>
+		<br />
+
+		<!-- Take the date from which age is to be calculated -->
+		<div>
+			<label>Bugünün tarihi:</label>
+			<input id="cdate"
+				type="date"
+				value="" />
+		</div>
+		<br />
+    </div>
+		<br />
+
+		<button id="shot" type="button"
+				onclick="checkup()">
+				Bir sonraki sağlık kontrolü
+		</button>
+
+        
+		<button id="nextShot" type="button"
+        onclick="checkupFuture()">
+        Kalan tüm sağlık kontrolü
+</button>
+
+		<br />
+		<div id="currentAge"></div>
+		<script src="checkup.js"></script>
+	</div>
+</body>
+
+</html>

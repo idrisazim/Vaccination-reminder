@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-size: 60%;
+  background: green;
+  background: url("https://www.hdwallpapers.in/download/cute_baby_child_is_covering_with_pink_cloth_and_wearing_woolen_knitted_pink_cap_4k_hd_cute-HD.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  padding: 50px;
+  text-align: center; /* Center align the buttons */
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 4px solid black;
+  border-radius: 10px;
+  color: black;
+  display: inline-block; /* Change display to inline-block */
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: green;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: white;
+}
+
+.button1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.button1:hover:after {
+  height: 100%;
+}
+
+.button2::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.button2:hover:after {
+  width: 100%;
+}
+
+.button3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.button3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}

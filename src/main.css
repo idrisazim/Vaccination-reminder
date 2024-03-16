@@ -10,7 +10,32 @@ body {
     background-size: cover;
 }
 
+.card {
+    text-align: center; /* Center align the content */
+}
 
+.asi {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; /* Wrap the items if they overflow */
+}
+
+.asi > div {
+    margin: 10px; /* Add margin around each input container */
+}
+
+.asi label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some spacing between label and input */
+}
+
+.asi input[type="date"] {
+    padding: 10px; /* Add padding to the inputs */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    width: 200px; /* Set a fixed width for the inputs */
+}
 
 /* Defining card properties */
 .card {
