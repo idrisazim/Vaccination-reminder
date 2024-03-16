@@ -14,7 +14,7 @@
 		</header>
 
 		<div>
-			<label>Çocuğun doğum tarihini giriniz</label>
+			<label>Çocuğun doğum tarihini:</label>
 
 			<input id="inputDob"
 				type="date"
@@ -24,17 +24,36 @@
 
 		<!-- Take the date from which age is to be calculated -->
 		<div>
-			<label>Bugünün tarihi</label><br>
+			<label>Bugünün tarihi:</label>
 			<input id="cdate"
 				type="date"
 				value="" />
 		</div>
 		<br />
 
-		<button type="button"
+		<div>
+			<label>Çocuğun kilosu(kg):</label>
+			<input id="kilo"
+				type="number"
+				value="" />
+		</div>
+		<br />
+
+		<button id="shot" type="button"
 				onclick="getDOB()">
-			Devam et
+			Aşılar
 		</button>
+
+		<button id="checkup" type="button"
+				onclick="checkup()">
+				Sağlık kontrolü
+		</button>
+
+		<button id="percentile" type="button"
+				onclick="percentile()">
+				Persentil
+		</button>
+
 		<br />
 		<div id="currentAge"></div>
 		<script src="main.js"></script>
