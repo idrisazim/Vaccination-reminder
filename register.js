@@ -91,7 +91,8 @@ register.addEventListener("click", function (event) {
         email: email
       })
 
-      alert("creating account...");
+      alert("Account created successfully!");
+      window.location.reload();
       // ...
     })
     .catch((error) => {
