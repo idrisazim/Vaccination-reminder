@@ -10,6 +10,22 @@ body {
     background-size: cover;
 }
 
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-container label {
+	margin-bottom: 5px;
+}
+
+.input-container input {
+	width: 200px; /* Adjust the width as needed */
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
 .card {
     text-align: center; /* Center align the content */
 }
@@ -35,6 +51,22 @@ body {
     border-radius: 5px; /* Add border radius for rounded corners */
     border: 1px solid #ccc; /* Add border for visual separation */
     width: 200px; /* Set a fixed width for the inputs */
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-container label {
+	margin-bottom: 5px;
+}
+
+.input-container input {
+	width: 200px; /* Adjust the width as needed */
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 /* Defining card properties */

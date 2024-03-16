@@ -43,77 +43,6 @@ function getDOB() {
   }
 }
 
-function getAllShots() {
-  // Get the input values
-  var dob = new Date(document.getElementById("inputDob").value);
-  var currentDate = new Date(document.getElementById("cdate").value);
-
-  var options = { year: "numeric", month: "long", day: "numeric" };
-  var formattedDob = dob.toLocaleDateString("tr-TR", options);
-  var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
-
-  // Calculate the difference in months
-  var diffMonths =
-    (currentDate.getFullYear() - dob.getFullYear()) * 12 +
-    currentDate.getMonth() -
-    dob.getMonth();
-
-  // Display the age
-  document.getElementById("currentAge").innerHTML =
-    "Çocuğun yaşı:  " +
-    Math.floor(diffMonths / 12) +
-    " " +
-    "yıl " +
-    " " +
-    (diffMonths % 12) +
-    " ay ve " +
-    " " +
-    currentDate.getDate() +
-    " günlük." +
-    "<br/>";
-  if (diffMonths <= 0) {
-    alert("en acil zamanda Hepatit B 1 doz aşısını yaptırınız");
-    displayFutureVaccinationReminder(0, dob, "Hepatit B 1 doz ");
-  }
-  if (diffMonths <= 1) {
-    displayFutureVaccinationReminder(1, dob, "Hepatit B 2 doz ");
-  }
-  if (diffMonths <= 2) {
-    displayFutureVaccinationReminder(2, dob, "BCG(Verem) ");
-  }
-  if (diffMonths <= 4) {
-    displayFutureVaccinationReminder(4, dob, "DABT-İPA-Hib, KPA ");
-  }
-  if (diffMonths <= 6) {
-    displayFutureVaccinationReminder(
-      6,
-      dob,
-      "Hepatit B 2 doz, DABT-İPA-Hib 2 doz, OPA 1 doz "
-    );
-  }
-  if (diffMonths <= 9) {
-    displayFutureVaccinationReminder(9, dob, "KKK İlave doz ");
-  }
-  if (diffMonths <= 12) {
-    displayFutureVaccinationReminder(12, dob, "KPA Rapel, KKK 1 doz ");
-  }
-  if (diffMonths <= 18) {
-    displayFutureVaccinationReminder(
-      18,
-      dob,
-      "DABT-İPA-Hib Rapel, OPA 2 doz, Hepatit A 1 doz "
-    );
-  }
-  if (diffMonths <= 24) {
-    displayFutureVaccinationReminder(24, dob, "Hepatit A 2 doz ");
-  }
-  if (diffMonths <= 48) {
-    displayFutureVaccinationReminder(48, dob, "KKK 2 doz, DABT-İPA 1 doz ");
-  }
-  if (diffMonths <= 156) {
-    displayFutureVaccinationReminder(156, dob, "Td Rapel ");
-  }
-}
 
 function displayVaccinationReminder(days, dob, vaccineName) {
   // Calculate the date for the vaccination reminder
@@ -141,10 +70,54 @@ function displayVaccinationReminder(days, dob, vaccineName) {
   }
 }
 
-function displayFutureVaccinationReminder(months, dob, vaccineName) {
+function getAllShots() {
+    // Get the input values
+    var dob = new Date(document.getElementById("inputDob").value);
+    var currentDate = new Date(document.getElementById("cdate").value);
+  
+    // Calculate the difference in days
+    var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
+  
+    // Calculate years, months, and remaining days
+    var years = Math.floor(diffDays / 365);
+    var months = Math.floor((diffDays % 365) / 30);
+    var days = diffDays % 30;
+  
+    // Display the age
+    document.getElementById("currentAge").innerHTML =
+      "Çocuğun yaşı: " +
+      years + " yıl, " +
+      months + " ay, ve " +
+      days + " gün." +
+      "<br/>";
+  
+    // Define vaccine schedule in months
+    var vaccineSchedule = {
+      0: "Hepatit B 1 doz",
+      1: "Hepatit B 2 doz",
+      2: "BCG(Verem)",
+      4: "DABT-İPA-Hib, KPA",
+      6: "Hepatit B 2 doz, DABT-İPA-Hib 2 doz, OPA 1 doz",
+      9: "KKK İlave doz",
+      12: "KPA Rapel, KKK 1 doz",
+      18: "DABT-İPA-Hib Rapel, OPA 2 doz, Hepatit A 1 doz",
+      24: "Hepatit A 2 doz",
+      48: "KKK 2 doz, DABT-İPA 1 doz",
+      156: "Td Rapel",
+    };
+  
+    // Display the reminders for future vaccinations
+    for (var months in vaccineSchedule) {
+      if ((years * 12 + parseInt(months)) >= diffDays / 30) {
+        displayFutureVaccinationReminder(months, dob, vaccineSchedule[months]);
+      }
+    }
+  }
+  
+  function displayFutureVaccinationReminder(months, dob, vaccineName) {
     // Calculate the date for the vaccination reminder
     var vaccinationDate = new Date(dob);
-    vaccinationDate.setMonth(vaccinationDate.getMonth() + months);
+    vaccinationDate.setMonth(vaccinationDate.getMonth() + parseInt(months));
   
     // Format the date to Turkish
     var options = { year: "numeric", month: "long", day: "numeric" };
@@ -160,11 +133,10 @@ function displayFutureVaccinationReminder(months, dob, vaccineName) {
       formattedVaccinationDate +
       " tarihinde " +
       vaccineName +
-      "aşısını yaptırmalısınız" +
+      " aşısını yaptırmalısınız" +
       "**" +
       "<br/>";
   }
-
 
 function age() {
   var dob = new Date(document.getElementById("inputDob").value);
