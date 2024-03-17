@@ -5,7 +5,7 @@ body {
 	font-family: 
 	"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
-    background-image: url("https://static01.nyt.com/images/2022/05/29/magazine/29mag-Antivaxxers2-images/29mag-Antivaxxers2-images-videoSixteenByNineJumbo1600-v2.jpg");
+    background-image: url("image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,6 +51,46 @@ body {
     border-radius: 5px; /* Add border radius for rounded corners */
     border: 1px solid #ccc; /* Add border for visual separation */
     width: 200px; /* Set a fixed width for the inputs */
+}
+#dogum,
+#tarih {
+	color: black;
+	font-size: 18px;
+}
+
+#tarihh {
+	margin-bottom: 10px;
+}
+
+#dogumm,
+#tarihh {
+	color: black;
+	font-size: 18px;
+}
+
+#dogum {
+	margin-bottom: 10px;
+}
+
+#shot,
+#nextShot {
+    background-color: green; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 15px;
+    cursor: pointer;
+	border-radius: 30px;
+}
+
+/* Hover effect */
+#shot:hover,
+#nextShot:hover {
+    background-color: #45a049; /* Darker green */
 }
 
 .input-container {
