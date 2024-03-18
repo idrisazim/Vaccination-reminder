@@ -54,7 +54,7 @@ body {
 }
 #dogum,
 #tarih {
-	color: black;
+	color: aliceblue;
 	font-size: 18px;
 }
 
@@ -64,7 +64,7 @@ body {
 
 #dogumm,
 #tarihh {
-	color: black;
+	color: aliceblue;
 	font-size: 18px;
 }
 
@@ -125,7 +125,7 @@ header {
 }
 
 header h1 {
-	background-color: rgb(231, 231, 231);
+	background-color: aliceblue;
 	color: green;
 	font-size: xx-large;
 	padding: 1%;
@@ -177,9 +177,6 @@ p {
 
 @media (min-width: 320px) and (max-width: 999px) {
 	body {
-		background-image: url("bgm.PNG");
-        background-repeat: no-repeat;
-        background-size: cover; /* Updated to cover the entire viewport */
         margin: 0;
         padding: 0;}
   
