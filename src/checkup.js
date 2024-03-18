@@ -53,7 +53,6 @@ function checkupFuture() {
     // Get the input values
     var dob = new Date(document.getElementById("inputDob").value);
     var currentDate = new Date(document.getElementById("cdate").value);
-  
     var options = { year: "numeric", month: "long", day: "numeric" };
     var formattedDob = dob.toLocaleDateString("tr-TR", options);
     var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);

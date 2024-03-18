@@ -36,7 +36,7 @@ function getDOB() {
   for (var days in vaccineSchedule) {
     if (diffDays <= days) {
         if (diffDays <= 5){
-      alert("En acil zamanda " + vaccineSchedule[days] + " aşısını yaptırınız");}
+      alert("En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız");}
       displayVaccinationReminder(days, dob, vaccineSchedule[days]);
       break; // Exit the loop after finding the first reminder
     }
