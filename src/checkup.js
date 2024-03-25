@@ -1,3 +1,4 @@
+
 function checkupFuture() {
   document.getElementById("currentAge").innerHTML = "";
 
@@ -48,6 +49,7 @@ function checkupFuture() {
 }
 
 function checkupFutureEmail() {
+  console.log("checkupFutureEmail function called");
 
   // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
@@ -105,37 +107,19 @@ function sendReminderEmail(days, dob, reminder) {
     var options = { year: "numeric", month: "long", day: "numeric" };
     var formattedCheckupDate = checkupDate.toLocaleDateString("tr-TR", options);
     var message = formattedCheckupDate + " tarihinde " + reminder + "yapılmalıdır";
-
-    var user = firebase.auth().currentUser;
-    console.log("Current user:", user); 
-    if (user) {
-        var recipientEmail = firebase.auth().currentUser.email;
+        var recipientEmail = document.getElementById("sendEmail").value;
         sendMail(recipientEmail, message);
-    } else {
-        console.error("No user is logged in.");
-    }
   }
 }
 
 function sendMail(recipientEmail, message) {
-  emailjs.init("Q7k-OHy1TYxr1L1su"); // Initialize EmailJS with your user ID
-  var serviceID = "service_lxyiakj";
-  var templateID = "template_6anvvgb";
-
-  var params = {
-      sendername: document.querySelector("#sendername").value,
-      to: recipientEmail,
-      subject: "Health Checkup Reminder",
-      replyto: document.querySelector("#replyto").value,
-      message: message
-  };
-
-  emailjs.send(serviceID, templateID, params)
-      .then(function(response) {
-          console.log("Email sent successfully:", response);
-      }, function(error) {
-          console.error("Email sending failed:", error);
-      });
+emailjs.init("Q7k-OHy1TYxr1L1su"); // Initialize EmailJS with your user ID
+emailjs.send("service_lxyiakj","template_6anvvgb",{
+subject: "Health Checkup Reminder",
+message: message,
+to: recipientEmail,
+sendername: "Reminder",
+});
 }
 
 
