@@ -1,51 +1,145 @@
 function checkupFuture() {
-    document.getElementById("currentAge").innerHTML = "";
+  document.getElementById("currentAge").innerHTML = "";
 
-    // Get the input values
-    var dob = new Date(document.getElementById("inputDob").value);
-    var currentDate = new Date(document.getElementById("cdate").value);
-  
+  // Get the input values
+  var dob = new Date(document.getElementById("inputDob").value);
+  var currentDate = new Date(document.getElementById("cdate").value);
+
+  var options = { year: "numeric", month: "long", day: "numeric" };
+  var formattedDob = dob.toLocaleDateString("tr-TR", options);
+  var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
+
+  // Calculate the difference in days
+  var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
+
+  if (diffDays >= 0 && diffDays <= 7) {
+    // For babies younger than 1 week
+    document.getElementById("currentAge").innerHTML =
+      "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
+  }if (diffDays <= 30) {
+    displayCheckupReminder(30, dob, "1 aylık sağlık kontrolü ");
+  }if (diffDays <= 60) {
+    displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ");
+  }if (diffDays <= 120) {
+    displayCheckupReminder(120, dob, "4 aylık sağlık kontrolü ");
+  }if (diffDays <= 180) {
+    displayCheckupReminder(180, dob, "6 aylık sağlık kontrolü ");
+  }if (diffDays <= 270) {
+    displayCheckupReminder(270, dob, "9 aylık sağlık kontrolü ");
+  }if (diffDays <= 450) {
+    displayCheckupReminder(450, dob, "15 aylık sağlık kontrolü ");
+  }if (diffDays <= 540) {
+    displayCheckupReminder(540, dob, "18 aylık sağlık kontrolü ");
+  }if (diffDays <= 900) {
+    displayCheckupReminder(900, dob, "30 aylık sağlık kontrolü ");
+  }if (diffDays <= 720) {
+    displayCheckupReminder(720, dob, "2 yaşındaki sağlık kontrolü ");
+  }if (diffDays <= 1080) {
+    displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü ");
+  }if (diffDays <= 1440) {
+    displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü ");
+  }if (diffDays <= 1800) {
+    displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü ");
+  }if (diffDays <= 2160) {
+    displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü ");
+  }if (diffDays <= 2520) {
+    displayCheckupReminder(2520, dob, "7 yaşındaki sağlık kontrolü ");
+  }
+}
+
+function checkupFutureEmail() {
+
+  // Get the input values
+  var dob = new Date(document.getElementById("inputDob").value);
+  var currentDate = new Date(document.getElementById("cdate").value);
+
+  var options = { year: "numeric", month: "long", day: "numeric" };
+  var formattedDob = dob.toLocaleDateString("tr-TR", options);
+  var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
+
+  // Calculate the difference in days
+  var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
+
+  if (diffDays >= 0 && diffDays <= 7) {
+    // For babies younger than 1 week
+    document.getElementById("currentAge").innerHTML =
+      "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
+    sendReminderEmail(30, dob, "1 aylık sağlık kontrolü ");
+  } else if (diffDays <= 30) {
+    sendReminderEmail(30, dob, "1 aylık sağlık kontrolü ");
+  } else if (diffDays <= 60) {
+    sendReminderEmail(60, dob, "2 aylık sağlık kontrolü ");
+  } else if (diffDays <= 120) {
+    sendReminderEmail(120, dob, "4 aylık sağlık kontrolü ");
+  } else if (diffDays <= 180) {
+    sendReminderEmail(180, dob, "6 aylık sağlık kontrolü ");
+  } else if (diffDays <= 270) {
+    sendReminderEmail(270, dob, "9 aylık sağlık kontrolü ");
+  } else if (diffDays <= 450) {
+    sendReminderEmail(450, dob, "15 aylık sağlık kontrolü ");
+  } else if (diffDays <= 540) {
+    sendReminderEmail(540, dob, "18 aylık sağlık kontrolü ");
+  } else if (diffDays <= 900) {
+    sendReminderEmail(900, dob, "30 aylık sağlık kontrolü ");
+  } else if (diffDays <= 720) {
+    sendReminderEmail(720, dob, "2 yaşındaki sağlık kontrolü ");
+  } else if (diffDays <= 1080) {
+    sendReminderEmail(1080, dob, "3 yaşındaki sağlık kontrolü ");
+  } else if (diffDays <= 1440) {
+    sendReminderEmail(1440, dob, "4 yaşındaki sağlık kontrolü ");
+  } else if (diffDays <= 1800) {
+    sendReminderEmail(1800, dob, "5 yaşındaki sağlık kontrolü ");
+  } else if (diffDays <= 2160) {
+    sendReminderEmail(2160, dob, "6 yaşındaki sağlık kontrolü ");
+  } else if (diffDays <= 2520) {
+    sendReminderEmail(2520, dob, "7 yaşındaki sağlık kontrolü ");
+  }
+}
+
+function sendReminderEmail(days, dob, reminder) {
+  var checkupDate = new Date(dob);
+  checkupDate.setDate(checkupDate.getDate() + days);
+
+  var currentDate = new Date();
+  if (checkupDate > currentDate) {
     var options = { year: "numeric", month: "long", day: "numeric" };
-    var formattedDob = dob.toLocaleDateString("tr-TR", options);
-    var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
-  
-    // Calculate the difference in days
-    var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
-  
-    if (diffDays >= 0 && diffDays <= 7) {
-      // For babies younger than 1 week
-      document.getElementById("currentAge").innerHTML =
-        "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
-    }if (diffDays <= 30) {
-      displayCheckupReminder(30, dob, "1 aylık sağlık kontrolü ");
-    }if (diffDays <= 60) {
-      displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ");
-    }if (diffDays <= 120) {
-      displayCheckupReminder(120, dob, "4 aylık sağlık kontrolü ");
-    }if (diffDays <= 180) {
-      displayCheckupReminder(180, dob, "6 aylık sağlık kontrolü ");
-    }if (diffDays <= 270) {
-      displayCheckupReminder(270, dob, "9 aylık sağlık kontrolü ");
-    }if (diffDays <= 450) {
-      displayCheckupReminder(450, dob, "15 aylık sağlık kontrolü ");
-    }if (diffDays <= 540) {
-      displayCheckupReminder(540, dob, "18 aylık sağlık kontrolü ");
-    }if (diffDays <= 900) {
-      displayCheckupReminder(900, dob, "30 aylık sağlık kontrolü ");
-    }if (diffDays <= 720) {
-      displayCheckupReminder(720, dob, "2 yaşındaki sağlık kontrolü ");
-    }if (diffDays <= 1080) {
-      displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü ");
-    }if (diffDays <= 1440) {
-      displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü ");
-    }if (diffDays <= 1800) {
-      displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü ");
-    }if (diffDays <= 2160) {
-      displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü ");
-    }if (diffDays <= 2520) {
-      displayCheckupReminder(2520, dob, "7 yaşındaki sağlık kontrolü ");
+    var formattedCheckupDate = checkupDate.toLocaleDateString("tr-TR", options);
+    var message = formattedCheckupDate + " tarihinde " + reminder + "yapılmalıdır";
+
+    var user = firebase.auth().currentUser;
+    console.log("Current user:", user); 
+    if (user) {
+        var recipientEmail = firebase.auth().currentUser.email;
+        sendMail(recipientEmail, message);
+    } else {
+        console.error("No user is logged in.");
     }
   }
+}
+
+function sendMail(recipientEmail, message) {
+  emailjs.init("Q7k-OHy1TYxr1L1su"); // Initialize EmailJS with your user ID
+  var serviceID = "service_lxyiakj";
+  var templateID = "template_6anvvgb";
+
+  var params = {
+      sendername: document.querySelector("#sendername").value,
+      to: recipientEmail,
+      subject: "Health Checkup Reminder",
+      replyto: document.querySelector("#replyto").value,
+      message: message
+  };
+
+  emailjs.send(serviceID, templateID, params)
+      .then(function(response) {
+          console.log("Email sent successfully:", response);
+      }, function(error) {
+          console.error("Email sending failed:", error);
+      });
+}
+
+
+
 
   function checkup() {
     document.getElementById("currentAge").innerHTML = "";
@@ -164,4 +258,3 @@ function checkupFuture() {
   
   // Calling current date function to set default date value
   currentDate();
-  

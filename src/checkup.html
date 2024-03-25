@@ -5,6 +5,7 @@
 <head>
 	<title>Sağlık kontrolü hatırlatma</title>
     <link rel='stylesheet'><link rel="stylesheet" href="main.css">
+	<script type="module" src="checkup.js" defer></script>
 </head>
 
 <body>
@@ -47,6 +48,12 @@
 		<br />
 		<div id="currentAge"></div>
 		<script src="checkup.js"></script>
+		<br />
+
+		<button id="mail" type="button"
+				onclick="checkupFutureEmail()">
+				Mail gönder
+		</button>
 	</div>
 </body>
 

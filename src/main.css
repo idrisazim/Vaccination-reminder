@@ -85,12 +85,19 @@ body {
     margin: 4px 15px;
     cursor: pointer;
 	border-radius: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 /* Hover effect */
 #shot:hover,
 #nextShot:hover {
     background-color: #45a049; /* Darker green */
+}
+
+#cdate,
+#inputDOB {
+	margin-bottom: 0px;
 }
 
 .input-container {
@@ -125,10 +132,12 @@ header {
 }
 
 header h1 {
+	border-radius: 10px;
 	background-color: aliceblue;
 	color: green;
 	font-size: xx-large;
 	padding: 1%;
+	margin-bottom: 5px;
 }
 
 /* Setting font and margin for text before input box */
@@ -152,9 +161,17 @@ input {
 }
 
 #inputDob {
+	border-radius: 10px;
     background-color: aliceblue;
 	margin: 2%;
 }
+
+#cdate {
+	border-radius: 10px;
+    background-color: aliceblue;
+}
+
+
 
 p {
 	font-size: larger;
@@ -173,6 +190,50 @@ p {
 	padding: 5%;
 	padding-top: 7%;
 	font-size: larger;
+}
+
+#kilo,
+#head,
+#height{
+	border-radius: 10px;
+	max-width: 70px;
+}
+
+#head{
+	margin-top: 10px;
+}
+
+#gender{
+	font-size: 15px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: black;
+    background-color: aliceblue;
+	margin-bottom: 20px;
+}
+
+#percentile{
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: aliceblue;
+}
+
+#vaccinationList {
+    max-height: 200000px; /* Adjust the maximum height as needed */
+   	overflow-y: auto; /* Enable vertical scrolling */
+    padding: 2px; /* Add some padding to the container */
+    margin: 0; /* Remove any margin */
+}
+
+#vaccinationList p {
+    margin: 20px 0; /* Add some margin between each reminder */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.scrollable {
+    max-height: 200px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    padding: 10px; /* Add padding for better appearance */
 }
 
 @media (min-width: 320px) and (max-width: 999px) {

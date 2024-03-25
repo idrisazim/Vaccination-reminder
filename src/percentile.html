@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
-    
+  <head>
+    <title>Persentil hesaplama</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<head>
-	<title>Persentil hesaplama</title>
-    <link rel='stylesheet'><link rel="stylesheet" href="main.css">
-</head>
+  <body>
+    <div class="card">
+      <header>
+        <h1>Persentil hesaplama</h1>
+      </header>
 
-<body>
-	<div class="card">
-		<header>
-			<h1>Persentil hesaplama</h1>
-		</header>
+      <div>
+        <label>Doğum tarihi:</label>
 
-		<div>
-			<label>Çocuğun doğum tarihini:</label>
+        <input id="inputDob" type="date" value="2024-01-01" />
+      </div>
+      <br />
 
-			<input id="inputDob"
-				type="date"
-				value="2024-01-01" />
-		</div>
-		<br />
 
-		<!-- Take the date from which age is to be calculated -->
-		<div>
-			<label>Bugünün tarihi:</label>
-			<input id="cdate"
-				type="date"
-				value="" />
-		</div>
-		<br />
+      <div>
+        <label>Kilo(kg):</label>
+        <input id="kilo" type="number" value="" />
+		<label>Boy(cm):</label>
+        <input id="height" type="number" value="" />
+		<br>
+		<label>Baş çevresi(cm):</label>
+        <input id="head" type="number" value="" />
+      </div>
+      <br />
 
-		<div>
-			<label>Çocuğun kilosu(kg):</label>
-			<input id="kilo"
-				type="number"
-				value="" />
-		</div>
-		<br />
+	  <label for="gender">Cinsiyet: </label>
+        <select name="sex" id="gender">
+            <option value="male">Erkek</option>
+           <option value="female">Kız</option>
+        </select>
+      <button id="percentile" type="button" onclick="percentile()">
+        Hesapla
+      </button>
 
-		<button id="percentile" type="button"
-				onclick="percentile()">
-				Hesapla
-		</button>
-
-		<br />
-		<div id="currentAge"></div>
-		<script src="percentile.js"></script>
-	</div>
-</body>
-
+      <br />
+      <div id="currentAge"></div>
+      <script src="percentile.js"></script>
+    </div>
+  </body>
 </html>
