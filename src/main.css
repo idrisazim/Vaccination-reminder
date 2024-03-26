@@ -357,7 +357,7 @@ p {
     padding: 5%;
     padding-top: 7%;
     font-size: larger;
-    max-height: 150px; /* Set the maximum height */
+    max-height: 200px; /* Set the maximum height */
     overflow-y: auto; /* Enable vertical scrollbar */
 }
 
