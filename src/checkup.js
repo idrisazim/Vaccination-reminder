@@ -64,6 +64,7 @@ function checkupFutureEmail() {
 
   if (diffDays >= 0 && diffDays <= 7) {
     // For babies younger than 1 week
+    
     document.getElementById("currentAge").innerHTML =
       "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
     sendReminderEmail(30, dob, "1 aylık sağlık kontrolü ");
@@ -96,7 +97,7 @@ function checkupFutureEmail() {
   } else if (diffDays <= 2520) {
     sendReminderEmail(2520, dob, "7 yaşındaki sağlık kontrolü ");
   }
-}
+};
 
 function sendReminderEmail(days, dob, reminder) {
   var checkupDate = new Date(dob);
@@ -113,6 +114,7 @@ function sendReminderEmail(days, dob, reminder) {
 }
 
 function sendMail(recipientEmail, message) {
+ 
 emailjs.init("Q7k-OHy1TYxr1L1su"); // Initialize EmailJS with your user ID
 emailjs.send("service_lxyiakj","template_6anvvgb",{
 subject: "Health Checkup Reminder",
