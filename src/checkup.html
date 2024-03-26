@@ -4,8 +4,20 @@
 
 <head>
 	<title>Sağlık kontrolü hatırlatma</title>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel='stylesheet'><link rel="stylesheet" href="main.css">
 	<script type="module" src="checkup.js" defer></script>
+	<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Q7k-OHy1TYxr1L1su",
+        });
+      })();
+    </script>
 </head>
 
 <body>
@@ -49,12 +61,14 @@
 		<div id="currentAge"></div>
 		<script src="checkup.js"></script>
 		<br />
+		<label for="secenek" id="secenek">Mail adresinizi giriniz: </label>
 
-		<input id="sendEmail" type="text" placeholder="Mail adresi">
+		<input id="to" type="text" placeholder="Mail adresiniz" />
+		<br>
 		<br>
 
-		<button id="mail" type="button" onclick="checkupFutureEmail()">
-				E-posta gönder
+		<button id="mail" type="button" onclick="sendMail()">
+				E-postaya gönder
 		</button>
 	</div>
 </body>

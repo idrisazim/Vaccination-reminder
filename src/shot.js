@@ -19,7 +19,7 @@ function age() {
     dob.getMonth();
 
   // Display the age
-  document.getElementById("currentAge").innerHTML =
+  document.getElementById("currentAge2").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffMonths / 12) +
     " " +
@@ -56,6 +56,7 @@ currentDate();
 
 
 function getDOB() {
+  reminder = "";
   // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
   var currentDate = new Date(document.getElementById("cdate").value);
@@ -63,7 +64,7 @@ function getDOB() {
   // Calculate the difference in days
   var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
 
-  document.getElementById("currentAge").innerHTML =
+  document.getElementById("currentAge2").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffDays / 365) +
     " yıl " +
@@ -74,7 +75,7 @@ function getDOB() {
     "<br/>";
 
   // Initialize the output string
-  var output = "Çocuğun yaşı:  " +
+  var output = "Çocuğun yaşı: " +
     Math.floor(diffDays / 365) +
     " yıl " +
     Math.floor((diffDays % 365) / 30) +
@@ -85,7 +86,6 @@ function getDOB() {
 
   // Define vaccine schedule in days
   var vaccineSchedule = {
-    0: "Hepatit B 1 doz",
     30: "Hepatit B 2 doz",
     60: "BCG(Verem)",
     120: "DABT-İPA-Hib, KPA",
@@ -102,15 +102,16 @@ function getDOB() {
   for (var days in vaccineSchedule) {
     if (diffDays <= days) {
       if (diffDays <= 5) {
-        alert("En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız");
-        output += "En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız\n";
+        alert("En acil zamanda Hepatit B 1 doz aşısını yaptırınız.");
+        document.getElementById("currentAge2").innerHTML += "En acil zamanda Hepatit B 1 doz aşısını yaptırınız."
+        reminder += "En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız\n";
       }
       displayVaccinationReminder(days, dob, vaccineSchedule[days]);
       break; // Exit the loop after finding the first reminder
     }
   }
 
-  return output;
+  return reminder;
 }
 
 
@@ -132,7 +133,7 @@ function displayVaccinationReminder(days, dob, vaccineName) {
   // Display the reminder if the vaccination date is in the future
   if (vaccinationDate > new Date()) {
 
-    document.getElementById("currentAge").innerHTML +=
+    document.getElementById("currentAge2").innerHTML +=
       "<br/>" +
       "**" +
       formattedVaccinationDate +
@@ -170,9 +171,8 @@ function sendMail(){
   var templateID = "template_rsmbjid";
 
   emailjs.send(serviceID, templateID, params)
-  alert("Email sent successfully!")
   .then( res => {
-    alert("Email sent successfully!");
+    alert("E-posta gönderildi!");
   })
   .catch();
     
@@ -182,7 +182,8 @@ function sendMail(){
 
 
 function getAllShots() {
-  document.getElementById("currentAge").innerHTML = "";
+  reminder = "";
+  document.getElementById("currentAge2").innerHTML = "";
 
   // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
@@ -231,14 +232,14 @@ function getAllShots() {
   vaccinationListContainer.style.overflowY = "auto"; // Enable vertical scrolling
 
   // Append the container to the page
-  document.getElementById("currentAge").appendChild(vaccinationListContainer);
+  document.getElementById("currentAge2").appendChild(vaccinationListContainer);
 
 
   for (var days in vaccineSchedule) {
     if (diffDays <= days) {
         if (diffDays <= 5){
-      alert("En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız");
-      output += "En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız\n";
+      alert("En acil zamanda Hepatit B 1 doz aşısını yaptırınız");
+      reminder += "En acil zamanda Hepatit B 1 doz aşısını yaptırınız\n";
       displayFutureVaccinationReminder(months, dob, vaccineSchedule[0], vaccinationListContainer);
       break; // Exit the loop after finding the first reminder
     }
@@ -277,7 +278,7 @@ function displayFutureVaccinationReminder(months, dob, vaccineName, container) {
 
 
 
-    reminderAll += "**" +
+    reminder += "**" +
     formattedVaccinationDate +
     " tarihinde " +
     vaccineName +
@@ -293,7 +294,7 @@ function sendMailAll(){
     sendername: sender,
     to: document.getElementById("to").value,
     subject: subjectt,
-    message: reminderAll,
+    message: reminder,
   };
 
 
@@ -301,9 +302,9 @@ function sendMailAll(){
   var templateID = "template_rsmbjid";
 
   emailjs.send(serviceID, templateID, params)
-  alert("Email sent successfully!")
+  alert("E-posta başarılı bir şekilde gönderildi!")
   .then( res => {
-    alert("Email sent successfully!");
+    alert("E-posta başarılı bir şekilde gönderildi!");
   })
   .catch();
     
