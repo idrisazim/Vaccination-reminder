@@ -870,10 +870,10 @@ function percentileWeight() {
       "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
       if(matchedCondition.percentile > 95 ){
         document.getElementById("currentAge").innerText +=
-      "Persentil değerleri standard değerin üstünde. İleri incelemeler için doktor/hastaneye başvurunuz.";}
+      "Persentil değerleri standard değerin üstünde. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
      else if(matchedCondition.percentile < 10){
         document.getElementById("currentAge").innerText +=
-      "Persentil değerleri standard değerin altında. İleri incelemeler için doktor/hastaneye başvurunuz.";}
+      "Persentil değerleri standard değerin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
       else if(matchedCondition.percentile >= 10 && matchedCondition.percentile <= 90 ){
         document.getElementById("currentAge").innerText +=
       "Persentil değerleri yasa göre standard değer aralığında.";
@@ -1746,7 +1746,7 @@ function percentileHeight() {
           "Persentil değerleri standard değerin üstünde.";}
           else if(matchedCondition.percentile < 5){
             document.getElementById("currentAge").innerText +=
-          "Persentil değerleri standard değerin altında. İleri incelemeler için doktor/hastaneye başvurunuz.";}
+          "Persentil değerleri standard değerin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
           else if(matchedCondition.percentile >= 10 && matchedCondition.percentile <= 90 ){
             document.getElementById("currentAge").innerText +=
           "Persentil değerleri yasa göre standard değer aralığında.";
