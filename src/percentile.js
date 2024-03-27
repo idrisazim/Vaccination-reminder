@@ -866,27 +866,52 @@ function percentileWeight() {
 
   // Display the result
   if (matchedCondition) {
-    document.getElementById("currentAge").innerText =
+    document.getElementById("currentAge").innerText = "";
+
+    if(matchedCondition.percentile <= 3){
+      document.getElementById("currentAge").innerText +=
+      "Kilo oranı 3. persentilin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";
+    }
+    else if(matchedCondition.percentile >= 99){
+      document.getElementById("currentAge").innerText +=
+      "Kilo oranı 99. persentilin üstünde. \nİleri incelemeler için doktor/hastaneye başvurunuz.";
+    }
+
+    else{
+
+      document.getElementById("currentAge").innerText =
       "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+
       if(matchedCondition.percentile > 95 ){
+        document.getElementById("currentAge").innerText =
+      "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
         document.getElementById("currentAge").innerText +=
       "Persentil değerleri standard değerin üstünde. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
-     else if(matchedCondition.percentile < 10){
+
+     else if(matchedCondition.percentile < 10 && matchedCondition.percentile > 3 ){
+      document.getElementById("currentAge").innerText =
+      "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
         document.getElementById("currentAge").innerText +=
       "Persentil değerleri standard değerin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
+
       else if(matchedCondition.percentile >= 10 && matchedCondition.percentile <= 90 ){
+        document.getElementById("currentAge").innerText =
+      "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
         document.getElementById("currentAge").innerText +=
       "Persentil değerleri yasa göre standard değer aralığında.";
     }
+
     else if(matchedCondition.percentile >= 90 && matchedCondition.percentile <= 95 ){
+      document.getElementById("currentAge").innerText =
+      "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
         document.getElementById("currentAge").innerText +=
       "Persentil değerleri standard değerin biraz üstünde.";
     }
    
-  } else {
-    document.getElementById("currentAge").innerText =
-      "Percentile not found for the provided inputs.";
-  }
+  } 
+    }
+
+    
 }
 
 
@@ -1739,25 +1764,48 @@ function percentileHeight() {
   
     // Display the result
     if (matchedCondition) {
+      document.getElementById("currentAge").innerText = "";
+    
+    if(matchedCondition.percentile <= 3){
+      document.getElementById("currentAge").innerText +=
+      "Boy oranı 3. persentilin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";
+    }
+    else if(matchedCondition.percentile >= 99){
+      document.getElementById("currentAge").innerText +=
+      "Boy oranı 99. Persentilin üstünde. \n";
+    }
+    else{
+
       document.getElementById("currentAge").innerText =
-        "Boy oranı " + matchedCondition.percentile + ". " + "persentilde. \n";
-        if(matchedCondition.percentile > 95 ){
-            document.getElementById("currentAge").innerText +=
-          "Persentil değerleri standard değerin üstünde.";}
-          else if(matchedCondition.percentile < 5){
-            document.getElementById("currentAge").innerText +=
-          "Persentil değerleri standard değerin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
-          else if(matchedCondition.percentile >= 10 && matchedCondition.percentile <= 90 ){
-            document.getElementById("currentAge").innerText +=
-          "Persentil değerleri yasa göre standard değer aralığında.";
-        }
-        else if(matchedCondition.percentile >= 90 && matchedCondition.percentile <= 95 ){
-            document.getElementById("currentAge").innerText +=
-          "Persentil değerleri standard değerin biraz üstünde.";
-        }
-    } else {
+      "Boy oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+
+      if(matchedCondition.percentile > 95 ){
+        document.getElementById("currentAge").innerText =
+      "Boy oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+        document.getElementById("currentAge").innerText +=
+      "Persentil değerleri standard değerin üstünde.";}
+
+     else if(matchedCondition.percentile < 10 && matchedCondition.percentile > 3 ){
       document.getElementById("currentAge").innerText =
-        "Percentile not found for the provided inputs.";
+      "Boy oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+        document.getElementById("currentAge").innerText +=
+      "Persentil değerleri standard değerin altında. \nİleri incelemeler için doktor/hastaneye başvurunuz.";}
+
+      else if(matchedCondition.percentile >= 10 && matchedCondition.percentile <= 90 ){
+        document.getElementById("currentAge").innerText =
+      "Boy oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+        document.getElementById("currentAge").innerText +=
+      "Persentil değerleri yasa göre standard değer aralığında.";
+    }
+
+    else if(matchedCondition.percentile >= 90 && matchedCondition.percentile <= 95 ){
+      document.getElementById("currentAge").innerText =
+      "Boy oranı " + matchedCondition.percentile +". " + "persentilde. \n";
+        document.getElementById("currentAge").innerText +=
+      "Persentil değerleri standard değerin biraz üstünde.";
+    }
+   
+  } 
     }
   }
   
