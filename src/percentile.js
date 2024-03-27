@@ -791,12 +791,18 @@ function percentileWeight() {
   // Display the result
   if (matchedCondition) {
     document.getElementById("currentAge").innerText =
-      "Weight is in " + matchedCondition.percentile + "th percentile.";
+      "Kilo oranı " + matchedCondition.percentile +". " + "pesentilde. \n";
+      if(matchedCondition.percentile > 95 || matchedCondition.percentile < 5){
+        document.getElementById("currentAge").innerText +=
+      "İleri incelem icin dokturnuza danışın.";
+    }
   } else {
     document.getElementById("currentAge").innerText =
       "Percentile not found for the provided inputs.";
   }
 }
+
+
 
 function percentileHeight() {
     var dob = new Date(document.getElementById("inputDob").value);
@@ -1573,7 +1579,10 @@ function percentileHeight() {
     // Display the result
     if (matchedCondition) {
       document.getElementById("currentAge").innerText =
-        "height is in " + matchedCondition.percentile + "th percentile.";
+        "Boy oranı " + matchedCondition.percentile + ". " + "persentilde. \n";
+        if(matchedCondition.percentile > 95 || matchedCondition.percentile < 5){
+            document.getElementById("currentAge").innerText +=
+          "İleri incelem icin dokturnuza danışın.";}
     } else {
       document.getElementById("currentAge").innerText =
         "Percentile not found for the provided inputs.";
