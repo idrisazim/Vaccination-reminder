@@ -77,18 +77,20 @@ function checkupFuture() {
   if (diffDays >= 0 && diffDays <= 7) {
     // For babies younger than 1 week
     document.getElementById("currentAge").innerHTML =
-      "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
-      reminderr += "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.\n";
+      "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve İşitme taraması yapılmalıdır. ";
+      reminderr += "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve İşitme taraması yapılmalıdır.\n";
   }if (diffDays <= 30) {
     displayCheckupReminder(30, dob, "1 aylık sağlık kontrolü ");
   }if (diffDays <= 60) {
-    displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ");
+    displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ve işitme taraması ");
   }if (diffDays <= 120) {
     displayCheckupReminder(120, dob, "4 aylık sağlık kontrolü ");
   }if (diffDays <= 180) {
     displayCheckupReminder(180, dob, "6 aylık sağlık kontrolü ");
   }if (diffDays <= 270) {
-    displayCheckupReminder(270, dob, "9 aylık sağlık kontrolü ");
+    displayCheckupReminder(270, dob, "9 aylık sağlık kontrolü ve HB(Hemoglobin) kontrolü ");
+  } if (diffDays <= 365) {
+    displayCheckupReminder(365, dob, "12 aylık görme taraması ");
   }if (diffDays <= 450) {
     displayCheckupReminder(450, dob, "15 aylık sağlık kontrolü ");
   }if (diffDays <= 540) {
@@ -98,13 +100,13 @@ function checkupFuture() {
   }if (diffDays <= 720) {
     displayCheckupReminder(720, dob, "2 yaşındaki sağlık kontrolü ");
   }if (diffDays <= 1080) {
-    displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü ");
+    displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü, görme ve işitme taraması ");
   }if (diffDays <= 1440) {
-    displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü ");
+    displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü, görme ve işitme taraması ");
   }if (diffDays <= 1800) {
-    displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü ");
+    displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü, görme ve işitme taraması ");
   }if (diffDays <= 2160) {
-    displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü ");
+    displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü, görme ve işitme taraması ");
   }if (diffDays <= 2520) {
     displayCheckupReminder(2520, dob, "7 yaşındaki sağlık kontrolü ");
   }
@@ -139,20 +141,22 @@ function checkupFuture() {
       
       // For babies younger than 1 week
       document.getElementById("currentAge").innerHTML =
-        "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
+        "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve işitme taraması yapılmalıdır.";
         reminderr += "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.\n";
         displayCheckupReminder(30, dob, "1 aylık sağlık kontrolü ");
     } else if (diffDays <= 30) {
       displayCheckupReminder(30, dob, "1 aylık sağlık kontrolü ");
     } else if (diffDays <= 60) {
-      displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ");
+      displayCheckupReminder(60, dob, "2 aylık sağlık kontrolü ve ve işitme taraması ");
     } else if (diffDays <= 120) {
       displayCheckupReminder(120, dob, "4 aylık sağlık kontrolü ");
     } else if (diffDays <= 180) {
       displayCheckupReminder(180, dob, "6 aylık sağlık kontrolü ");
     } else if (diffDays <= 270) {
-      displayCheckupReminder(270, dob, "9 aylık sağlık kontrolü ");
-    } else if (diffDays <= 450) {
+      displayCheckupReminder(270, dob, "9 aylık sağlık ve HB(Hemoglobin) kontrolü ");
+    } else if (diffDays <= 365) {
+      displayCheckupReminder(365, dob, "12 aylık görme taraması ");
+    }else if (diffDays <= 450) {
       displayCheckupReminder(450, dob, "15 aylık sağlık kontrolü ");
     } else if (diffDays <= 540) {
       displayCheckupReminder(540, dob, "18 aylık sağlık kontrolü ");
@@ -161,13 +165,13 @@ function checkupFuture() {
     } else if (diffDays <= 720) {
       displayCheckupReminder(720, dob, "2 yaşındaki sağlık kontrolü ");
     } else if (diffDays <= 1080) {
-      displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü ");
+      displayCheckupReminder(1080, dob, "3 yaşındaki sağlık kontrolü, işitme ve görme taraması ");
     } else if (diffDays <= 1440) {
-      displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü ");
+      displayCheckupReminder(1440, dob, "4 yaşındaki sağlık kontrolü, işitme ve görme taraması ");
     } else if (diffDays <= 1800) {
-      displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü ");
+      displayCheckupReminder(1800, dob, "5 yaşındaki sağlık kontrolü, işitme ve görme taraması ");
     } else if (diffDays <= 2160) {
-      displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü ");
+      displayCheckupReminder(2160, dob, "6 yaşındaki sağlık kontrolü, işitme ve görme taraması ");
     } else if (diffDays <= 2520) {
       displayCheckupReminder(2520, dob, "7 yaşındaki sağlık kontrolü ");
     }

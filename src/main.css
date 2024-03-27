@@ -379,6 +379,13 @@ p {
 #height{
 	border-radius: 10px;
 	max-width: 70px;
+	
+}
+
+#kg,
+#cm, #birth, #cinsiyet{
+
+	color: aliceblue;
 }
 
 #head{
@@ -392,12 +399,23 @@ p {
 	border-color: black;
     background-color: aliceblue;
 	margin-bottom: 20px;
+	height: 40px;
 }
 
-#percentile{
-	margin-left: 10px;
-	border-radius: 5px;
-	background-color: aliceblue;
+#percentile, #percentileKilo{
+	background-color: green; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 15px;
+    cursor: pointer;
+	border-radius: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 #vaccinationList {

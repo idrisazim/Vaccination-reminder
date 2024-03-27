@@ -13,7 +13,7 @@
       </header>
 
       <div>
-        <label>Doğum tarihi:</label>
+        <label id="birth">Doğum tarihi:</label>
 
         <input id="inputDob" type="date" value="2024-01-01" />
       </div>
@@ -21,23 +21,26 @@
 
 
       <div>
-        <label>Kilo(kg):</label>
-        <input id="kilo" type="number" value="" />
-		<label>Boy(cm):</label>
+       
+		<label id="cm">Boy(cm):</label>
         <input id="height" type="number" value="" />
+        <label id="kg">Kilo(kg):</label>
+        <input id="kilo" type="number" value="" />
 		<br>
-		<label>Baş çevresi(cm):</label>
-        <input id="head" type="number" value="" />
       </div>
       <br />
 
-	  <label for="gender">Cinsiyet: </label>
+	  <label id="cinsiyet" for="gender">Cinsiyet: </label>
         <select name="sex" id="gender">
             <option value="male">Erkek</option>
            <option value="female">Kız</option>
         </select>
-      <button id="percentile" type="button" onclick="percentile()">
-        Hesapla
+        <br>
+      <button id="percentile" type="button" onclick="percentileHeight()">
+        Boy persentil hesapla
+      </button>
+      <button id="percentileKilo" type="button" onclick="percentileWeight()">
+        Kilo persentil hesapla
       </button>
 
       <br />
