@@ -17,6 +17,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [0, 0.5], weight: 4.172493, percentile: 90 },
     { gender: "male", ageRange: [0, 0.5], weight: 4.340293, percentile: 95 },
     { gender: "male", ageRange: [0, 0.5], weight: 4.446488, percentile: 97 },
+    { gender: "male", ageRange: [0, 0.5], weight: 849.6177, percentile: 99 },
     // 0.5 - 1.5
     { gender: "male", ageRange: [0.5, 1.5], weight: 2.799549, percentile: 3 },
     { gender: "male", ageRange: [0.5, 1.5], weight: 2.964656, percentile: 5 },
@@ -27,6 +28,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [0.5, 1.5], weight: 4.718161, percentile: 90 },
     { gender: "male", ageRange: [0.5, 1.5], weight: 4.91013, percentile: 95 },
     { gender: "male", ageRange: [0.5, 1.5], weight: 5.032625, percentile: 97 },
+    { gender: "male", ageRange: [0.5, 1.5], weight: 849.6177, percentile: 99 },
     // 1.5 - 2.5
     { gender: "male", ageRange: [1.5, 2.5], weight: 3.614688, percentile: 3 },
     { gender: "male", ageRange: [1.5, 2.5], weight: 3.774849, percentile: 5 },
@@ -37,6 +39,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [1.5, 2.5], weight: 5.967102, percentile: 90 },
     { gender: "male", ageRange: [1.5, 2.5], weight: 4.91013, percentile: 95 },
     { gender: "male", ageRange: [1.5, 2.5], weight: 6.121929, percentile: 97 },
+    { gender: "male", ageRange: [1.5, 2.5], weight: 849.6177, percentile: 99 },
     // 2.5 - 3.5
 
     { gender: "male", ageRange: [2.5, 3.5], weight: 4.342341, percentile: 3 },
@@ -48,6 +51,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [2.5, 3.5], weight: 6.638979, percentile: 90 },
     { gender: "male", ageRange: [2.5, 3.5], weight: 6.921119, percentile: 95 },
     { gender: "male", ageRange: [2.5, 3.5], weight: 7.10625, percentile: 97 },
+    { gender: "male", ageRange: [2.5, 3.5], weight: 849.6177, percentile: 99 },
     // 3.5 - 4.5
 
     { gender: "male", ageRange: [3.5, 4.5], weight: 4.992898, percentile: 3 },
@@ -59,6 +63,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [3.5, 4.5], weight: 7.460702, percentile: 90 },
     { gender: "male", ageRange: [3.5, 4.5], weight: 7.781401, percentile: 95 },
     { gender: "male", ageRange: [3.5, 4.5], weight: 7.993878, percentile: 97 },
+    { gender: "male", ageRange: [3.5, 4.5], weight: 849.6177, percentile: 99 },
     // 4.5 - 5.5
     { gender: "male", ageRange: [4.5, 5.5], weight: 5.575169, percentile: 3 },
     { gender: "male", ageRange: [4.5, 5.5], weight: 5.744752, percentile: 5 },
@@ -69,6 +74,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [4.5, 5.5], weight: 8.202193, percentile: 90 },
     { gender: "male", ageRange: [4.5, 5.5], weight: 8.556813, percentile: 95 },
     { gender: "male", ageRange: [4.5, 5.5], weight: 8.793444, percentile: 97 },
+    { gender: "male", ageRange: [4.5, 5.5], weight: 849.6177, percentile: 99 },
     //5.5 - 6.5
     { gender: "male", ageRange: [5.5, 6.5], weight: 6.096775, percentile: 3 },
     { gender: "male", ageRange: [5.5, 6.5], weight: 6.272175, percentile: 5 },
@@ -79,6 +85,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [5.5, 6.5], weight: 8.871384, percentile: 90 },
     { gender: "male", ageRange: [5.5, 6.5], weight: 9.255615, percentile: 95 },
     { gender: "male", ageRange: [5.5, 6.5], weight: 9.513307, percentile: 97 },
+    { gender: "male", ageRange: [5.5, 6.5], weight: 849.6177, percentile: 99 },
     //6.5 - 7.5
     { gender: "male", ageRange: [6.5, 7.5], weight: 6.56443, percentile: 3 },
     { gender: "male", ageRange: [6.5, 7.5], weight: 6.745993, percentile: 5 },
@@ -89,6 +96,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [6.5, 7.5], weight: 9.475466, percentile: 90 },
     { gender: "male", ageRange: [6.5, 7.5], weight: 9.885436, percentile: 95 },
     { gender: "male", ageRange: [6.5, 7.5], weight: 10.16135, percentile: 97 },
+    { gender: "male", ageRange: [6.5, 7.5], weight: 849.6177, percentile: 99 },
     // 7.5 - 8.5
     { gender: "male", ageRange: [7.5, 8.5], weight: 6.984123, percentile: 3 },
     { gender: "male", ageRange: [7.5, 8.5], weight: 7.171952, percentile: 5 },
@@ -99,6 +107,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [7.5, 8.5], weight: 10.02101, percentile: 90 },
     { gender: "male", ageRange: [7.5, 8.5], weight: 10.45331, percentile: 95 },
     { gender: "male", ageRange: [7.5, 8.5], weight: 10.74492, percentile: 97 },
+    { gender: "male", ageRange: [7.5, 8.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [8.5, 9.5], weight: 7.361236, percentile: 3 },
     { gender: "male", ageRange: [8.5, 9.5], weight: 7.555287, percentile: 5 },
@@ -109,6 +118,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [8.5, 9.5], weight: 10.51406, percentile: 90 },
     { gender: "male", ageRange: [8.5, 9.5], weight: 10.96574, percentile: 95 },
     { gender: "male", ageRange: [8.5, 9.5], weight: 11.27084, percentile: 97 },
+    { gender: "male", ageRange: [8.5, 9.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [9.5, 10.5], weight: 7.700624, percentile: 3 },
     { gender: "male", ageRange: [9.5, 10.5], weight: 7.900755, percentile: 5 },
@@ -119,6 +129,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [9.5, 10.5], weight: 10.96017, percentile: 90 },
     { gender: "male", ageRange: [9.5, 10.5], weight: 11.42868, percentile: 95 },
     { gender: "male", ageRange: [9.5, 10.5], weight: 11.74538, percentile: 97 },
+    { gender: "male", ageRange: [9.5, 10.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [10.5, 11.5], weight: 8.006677, percentile: 3 },
     { gender: "male", ageRange: [10.5, 11.5], weight: 8.212684, percentile: 5 },
@@ -129,6 +140,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [10.5, 11.5], weight: 11.36445, percentile: 90 },
     { gender: "male", ageRange: [10.5, 11.5], weight: 11.84763, percentile: 95 },
     { gender: "male", ageRange: [10.5, 11.5], weight: 12.17436, percentile: 97 },
+    { gender: "male", ageRange: [10.5, 11.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [11.5, 12.5], weight: 8.283365, percentile: 3 },
     { gender: "male", ageRange: [11.5, 12.5], weight: 8.495, percentile: 5 },
@@ -139,6 +151,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [11.5, 12.5], weight: 11.7316, percentile: 90 },
     { gender: "male", ageRange: [11.5, 12.5], weight: 12.22766, percentile: 95 },
     { gender: "male", ageRange: [11.5, 12.5], weight: 12.56308, percentile: 97 },
+    { gender: "male", ageRange: [11.5, 12.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [12.5, 13.5], weight: 8.534275, percentile: 3 },
     { gender: "male", ageRange: [12.5, 13.5], weight: 8.751264, percentile: 5 },
@@ -149,6 +162,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [12.5, 13.5], weight: 12.06595, percentile: 90 },
     { gender: "male", ageRange: [12.5, 13.5], weight: 12.5734, percentile: 95 },
     { gender: "male", ageRange: [12.5, 13.5], weight: 12.91645, percentile: 97 },
+    { gender: "male", ageRange: [12.5, 13.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [13.5, 14.5], weight: 8.762649, percentile: 3 },
     { gender: "male", ageRange: [13.5, 14.5], weight: 8.984701, percentile: 5 },
@@ -159,6 +173,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [13.5, 14.5], weight: 12.37145, percentile: 90 },
     { gender: "male", ageRange: [13.5, 14.5], weight: 12.88911, percentile: 95 },
     { gender: "male", ageRange: [13.5, 14.5], weight: 13.23893, percentile: 97 },
+    { gender: "male", ageRange: [13.5, 14.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [14.5, 15.5], weight: 8.971407, percentile: 3 },
     { gender: "male", ageRange: [14.5, 15.5], weight: 9.198222, percentile: 5 },
@@ -169,6 +184,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [14.5, 15.5], weight: 12.65175, percentile: 90 },
     { gender: "male", ageRange: [14.5, 15.5], weight: 13.17867	, percentile: 95 },
     { gender: "male", ageRange: [14.5, 15.5], weight: 13.53462, percentile: 97 },
+    { gender: "male", ageRange: [14.5, 15.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [15.5, 16.5], weight: 9.16318, percentile: 3 },
     { gender: "male", ageRange: [15.5, 16.5], weight: 9.394454, percentile: 5 },
@@ -179,6 +195,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [15.5, 16.5], weight: 12.91015, percentile: 90 },
     { gender: "male", ageRange: [15.5, 16.5], weight: 13.44564	, percentile: 95 },
     { gender: "male", ageRange: [15.5, 16.5], weight: 13.80724, percentile: 97 },
+    { gender: "male", ageRange: [15.5, 16.5], weight: 849.6177, percentile: 99},
 
     { gender: "male", ageRange: [16.5, 17.5], weight: 9.340328, percentile: 3 },
     { gender: "male", ageRange: [16.5, 17.5], weight: 9.575757, percentile: 5 },
@@ -189,6 +206,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [16.5, 17.5], weight: 13.14969, percentile: 90 },
     { gender: "male", ageRange: [16.5, 17.5], weight: 13.69325	, percentile: 95 },
     { gender: "male", ageRange: [16.5, 17.5], weight: 14.06019, percentile: 97 },
+    { gender: "male", ageRange: [16.5, 17.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [17.5, 18.5], weight: 9.504964, percentile: 3 },
     { gender: "male", ageRange: [17.5, 18.5], weight: 9.744251, percentile: 5 },
@@ -199,6 +217,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [17.5, 18.5], weight: 13.37311, percentile: 90 },
     { gender: "male", ageRange: [17.5, 18.5], weight: 13.92444	, percentile: 95 },
     { gender: "male", ageRange: [17.5, 18.5], weight: 14.29655, percentile: 97 },
+    { gender: "male", ageRange: [17.5, 18.5], weight: 849.6177, percentile: 99},
 
     { gender: "male", ageRange: [18.5, 19.5], weight: 9.658975, percentile: 3 },
     { gender: "male", ageRange: [18.5, 19.5], weight: 9.90183, percentile: 5 },
@@ -209,6 +228,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [18.5, 19.5], weight: 13.5829, percentile: 90 },
     { gender: "male", ageRange: [18.5, 19.5], weight: 14.14187	, percentile: 95 },
     { gender: "male", ageRange: [18.5, 19.5], weight: 14.51909, percentile: 97 },
+    { gender: "male", ageRange: [18.5, 19.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [19.5, 20.5], weight: 9.804039, percentile: 3 },
     { gender: "male", ageRange: [19.5, 20.5], weight: 10.05019, percentile: 5 },
@@ -219,6 +239,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [19.5, 20.5], weight: 13.78133, percentile: 90 },
     { gender: "male", ageRange: [19.5, 20.5], weight: 14.34795	, percentile: 95 },
     { gender: "male", ageRange: [19.5, 20.5], weight: 14.73034, percentile: 97 },
+    { gender: "male", ageRange: [19.5, 20.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [20.5, 21.5], weight: 9.941645, percentile: 3 },
     { gender: "male", ageRange: [20.5, 21.5], weight: 10.19082, percentile: 5 },
@@ -229,6 +250,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [20.5, 21.5], weight: 13.97042, percentile: 90 },
     { gender: "male", ageRange: [20.5, 21.5], weight: 14.54484	, percentile: 95 },
     { gender: "male", ageRange: [20.5, 21.5], weight: 14.93256, percentile: 97 },
+    { gender: "male", ageRange: [20.5, 21.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [21.5, 22.5], weight: 10.07311, percentile: 3 },
     { gender: "male", ageRange: [21.5, 22.5], weight: 10.32507, percentile: 5 },
@@ -239,6 +261,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [21.5, 22.5], weight: 14.15201, percentile: 90 },
     { gender: "male", ageRange: [21.5, 22.5], weight: 14.73448	, percentile: 95 },
     { gender: "male", ageRange: [21.5, 22.5], weight: 15.12777, percentile: 97 },
+    { gender: "male", ageRange: [21.5, 22.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [22.5, 23.5], weight: 10.19957, percentile: 3 },
     { gender: "male", ageRange: [22.5, 23.5], weight: 10.4541, percentile: 5 },
@@ -249,6 +272,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [22.5, 23.5], weight: 14.32772, percentile: 90 },
     { gender: "male", ageRange: [22.5, 23.5], weight: 14.91861	, percentile: 95 },
     { gender: "male", ageRange: [22.5, 23.5], weight: 15.31777, percentile: 97 },
+    { gender: "male", ageRange: [22.5, 23.5], weight: 849.6177, percentile: 99},
 
     { gender: "male", ageRange: [23.5, 24.5], weight: 10.32206, percentile: 3 },
     { gender: "male", ageRange: [23.5, 24.5], weight: 10.57895, percentile: 5 },
@@ -259,6 +283,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [23.5, 24.5], weight: 14.499	, percentile: 90 },
     { gender: "male", ageRange: [23.5, 24.5], weight: 15.09876	, percentile: 95 },
     { gender: "male", ageRange: [23.5, 24.5], weight: 15.50418, percentile: 97 },
+    { gender: "male", ageRange: [23.5, 24.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [24.5, 25.5], weight: 10.44144, percentile: 3 },
     { gender: "male", ageRange: [24.5, 25.5], weight: 10.70051, percentile: 5 },
@@ -269,6 +294,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [24.5, 25.5], weight: 14.66716	, percentile: 90 },
     { gender: "male", ageRange: [24.5, 25.5], weight: 15.2763	, percentile: 95 },
     { gender: "male", ageRange: [24.5, 25.5], weight: 15.68841, percentile: 97 },
+    { gender: "male", ageRange: [24.5, 25.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [25.5, 26.5], weight: 10.55847, percentile: 3 },
     { gender: "male", ageRange: [25.5, 26.5], weight: 10.81958, percentile: 5 },
@@ -279,6 +305,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [25.5, 26.5], weight: 14.83332	, percentile: 90 },
     { gender: "male", ageRange: [25.5, 26.5], weight: 15.45242	, percentile: 95 },
     { gender: "male", ageRange: [25.5, 26.5], weight: 15.8717, percentile: 97 },
+    { gender: "male", ageRange: [25.5, 26.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [26.5, 27.5], weight: 10.6738, percentile: 3 },
     { gender: "male", ageRange: [26.5, 27.5], weight: 10.93681, percentile: 5 },
@@ -289,6 +316,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [26.5, 27.5], weight: 14.99848, percentile: 90 },
     { gender: "male", ageRange: [26.5, 27.5], weight: 15.62819, percentile: 95 },
     { gender: "male", ageRange: [26.5, 27.5], weight: 16.05514, percentile: 97 },
+    { gender: "male", ageRange: [26.5, 27.5], weight: 849.6177, percentile: 99},
 
     
     { gender: "male", ageRange: [27.5, 28.5], weight: 10.78798, percentile: 3 },
@@ -300,6 +328,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [27.5, 28.5], weight: 15.16351, percentile: 90 },
     { gender: "male", ageRange: [27.5, 28.5], weight: 15.8045, percentile: 95 },
     { gender: "male", ageRange: [27.5, 28.5], weight: 16.23967, percentile: 97 },
+    { gender: "male", ageRange: [27.5, 28.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [28.5, 29.5], weight: 10.90147, percentile: 3 },
     { gender: "male", ageRange: [28.5, 29.5], weight: 11.16803, percentile: 5 },
@@ -310,6 +339,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [28.5, 29.5], weight: 15.32917, percentile: 90 },
     { gender: "male", ageRange: [28.5, 29.5], weight: 15.98214, percentile: 95 },
     { gender: "male", ageRange: [28.5, 29.5], weight: 16.42609, percentile: 97 },
+    { gender: "male", ageRange: [28.5, 29.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [29.5, 30.5], weight: 11.01466, percentile: 3 },
     { gender: "male", ageRange: [29.5, 30.5], weight: 11.28293, percentile: 5 },
@@ -320,6 +350,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [29.5, 30.5], weight: 15.4961, percentile: 90 },
     { gender: "male", ageRange: [29.5, 30.5], weight: 16.16177, percentile: 95 },
     { gender: "male", ageRange: [29.5, 30.5], weight: 16.61508, percentile: 97 },
+    { gender: "male", ageRange: [29.5, 30.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [30.5, 31.5], weight: 11.12787, percentile: 3 },
     { gender: "male", ageRange: [30.5, 31.5], weight: 11.39782, percentile: 5 },
@@ -330,6 +361,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [30.5, 31.5], weight: 15.66485, percentile: 90 },
     { gender: "male", ageRange: [30.5, 31.5], weight: 16.34395, percentile: 95 },
     { gender: "male", ageRange: [30.5, 31.5], weight: 16.8072, percentile: 97 },
+    { gender: "male", ageRange: [30.5, 31.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [31.5, 32.5], weight: 11.24135, percentile: 3 },
     { gender: "male", ageRange: [31.5, 32.5], weight: 11.513, percentile: 5 },
@@ -340,6 +372,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [31.5, 32.5], weight: 15.83588, percentile: 90 },
     { gender: "male", ageRange: [31.5, 32.5], weight: 16.52915, percentile: 95 },
     { gender: "male", ageRange: [31.5, 32.5], weight: 17.00291, percentile: 97 },
+    { gender: "male", ageRange: [31.5, 32.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [32.5, 33.5], weight: 11.3553, percentile: 3 },
     { gender: "male", ageRange: [32.5, 33.5], weight: 11.62869, percentile: 5 },
@@ -350,6 +383,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [32.5, 33.5], weight: 16.00958, percentile: 90 },
     { gender: "male", ageRange: [32.5, 33.5], weight: 16.71773, percentile: 95 },
     { gender: "male", ageRange: [32.5, 33.5], weight: 17.2026, percentile: 97 },
+    { gender: "male", ageRange: [32.5, 33.5], weight: 849.6177, percentile: 99},
 
     { gender: "male", ageRange: [33.5, 34.5], weight: 11.46988	, percentile: 3 },
     { gender: "male", ageRange: [33.5, 34.5], weight: 11.74508, percentile: 5 },
@@ -360,6 +394,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [33.5, 34.5], weight: 16.18624, percentile: 90 },
     { gender: "male", ageRange: [33.5, 34.5], weight: 16.91, percentile: 95 },
     { gender: "male", ageRange: [33.5, 34.5], weight: 17.40654, percentile: 97 },
+    { gender: "male", ageRange: [33.5, 34.5], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [34.5, 35.5], weight: 11.58521	, percentile: 3 },
     { gender: "male", ageRange: [34.5, 35.5], weight: 11.8623, percentile: 5 },
@@ -370,6 +405,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [34.5, 35.5], weight: 16.36612, percentile: 90 },
     { gender: "male", ageRange: [34.5, 35.5], weight: 17.10619, percentile: 95 },
     { gender: "male", ageRange: [34.5, 35.5], weight: 17.61495, percentile: 97 },
+    { gender: "male", ageRange: [34.5, 35.5], weight:849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [35.5, 36], weight: 11.70137	, percentile: 3 },
     { gender: "male", ageRange: [35.5, 36], weight: 11.98046, percentile: 5 },
@@ -380,6 +416,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [35.5, 36], weight: 16.5494, percentile: 90 },
     { gender: "male", ageRange: [35.5, 36], weight: 17.30646, percentile: 95 },
     { gender: "male", ageRange: [35.5, 36], weight: 17.82797, percentile: 97 },
+    { gender: "male", ageRange: [35.5, 36], weight: 849.6177, percentile: 99 },
 
     { gender: "male", ageRange: [36, 37], weight: 11.75978	, percentile: 3 },
     { gender: "male", ageRange: [36, 37], weight: 12.03991, percentile: 5 },
@@ -390,6 +427,7 @@ function percentileWeight() {
     { gender: "male", ageRange: [36, 37], weight: 16.64237, percentile: 90 },
     { gender: "male", ageRange: [36, 37], weight: 17.40816, percentile: 95 },
     { gender: "male", ageRange: [36, 37], weight: 17.93625, percentile: 97 },
+    { gender: "male", ageRange: [36, 37], weight: 849.6177, percentile: 99},
 
     // female
 
@@ -402,6 +440,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [0, 0.5], weight: 3.992572, percentile: 90 },
     { gender: "female", ageRange: [0, 0.5], weight: 4.152637, percentile: 95 },
     { gender: "female", ageRange: [0, 0.5], weight: 4.254922, percentile: 97 },
+    { gender: "female", ageRange: [0, 0.5], weight: 849.6177, percentile: 99 },
     // 0.5 - 1.5
     { gender: "female", ageRange: [0.5, 1.5], weight: 2.756917, percentile: 3 },
     { gender: "female", ageRange: [0.5, 1.5], weight: 2.894442, percentile: 5 },
@@ -412,6 +451,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [0.5, 1.5], weight: 4.450126, percentile: 90 },
     { gender: "female", ageRange: [0.5, 1.5], weight: 4.628836, percentile: 95 },
     { gender: "female", ageRange: [0.5, 1.5], weight: 4.743582, percentile: 97 },
+    { gender: "female", ageRange: [0.5, 1.5], weight: 849.6177, percentile: 99},
     // 1.5 - 2.5
     { gender: "female", ageRange: [1.5, 2.5], weight: 3.402293, percentile: 3 },
     { gender: "female", ageRange: [1.5, 2.5], weight: 3.54761, percentile: 5 },
@@ -422,6 +462,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [1.5, 2.5], weight: 5.305632, percentile: 90 },
     { gender: "female", ageRange: [1.5, 2.5], weight: 5.519169, percentile: 95 },
     { gender: "female", ageRange: [1.5, 2.5], weight: 5.657379, percentile: 97 },
+    { gender: "female", ageRange: [1.5, 2.5], weight: 849.6177, percentile: 99},
     // 2.5 - 3.5
 
     { gender: "female", ageRange: [2.5, 3.5], weight: 3.997806, percentile: 3 },
@@ -433,6 +474,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [2.5, 3.5], weight: 6.087641, percentile: 90 },
     { gender: "female", ageRange: [2.5, 3.5], weight: 6.332837, percentile: 95 },
     { gender: "female", ageRange: [2.5, 3.5], weight: 6.492574, percentile: 97 },
+    { gender: "female", ageRange: [2.5, 3.5], weight: 849.6177, percentile: 99 },
     // 3.5 - 4.5
 
     { gender: "female", ageRange: [3.5, 4.5], weight: 4.547383, percentile: 3 },
@@ -444,6 +486,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [3.5, 4.5], weight: 6.80277, percentile: 90 },
     { gender: "female", ageRange: [3.5, 4.5], weight: 7.076723, percentile: 95 },
     { gender: "female", ageRange: [3.5, 4.5], weight: 7.256166, percentile: 97 },
+    { gender: "female", ageRange: [3.5, 4.5], weight: 849.6177, percentile: 99 },
     // 4.5 - 5.5
     { gender: "female", ageRange: [4.5, 5.5], weight: 5.054539, percentile: 3 },
     { gender: "female", ageRange: [4.5, 5.5], weight: 5.220488, percentile: 5 },
@@ -454,6 +497,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [4.5, 5.5], weight: 7.457119, percentile: 90 },
     { gender: "female", ageRange: [4.5, 5.5], weight: 7.757234, percentile: 95 },
     { gender: "female", ageRange: [4.5, 5.5], weight: 7.95473, percentile: 97 },
+    { gender: "female", ageRange: [4.5, 5.5], weight: 849.6177, percentile: 99 },
     //5.5 - 6.5
     { gender: "female", ageRange: [5.5, 6.5], weight: 5.5225, percentile: 3 },
     { gender: "female", ageRange: [5.5, 6.5], weight: 5.693974, percentile: 5 },
@@ -464,6 +508,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [5.5, 6.5], weight: 8.056331, percentile: 90 },
     { gender: "female", ageRange: [5.5, 6.5], weight: 8.38033, percentile: 95 },
     { gender: "female", ageRange: [5.5, 6.5], weight: 8.594413, percentile: 97 },
+    { gender: "female", ageRange: [5.5, 6.5], weight: 849.6177, percentile: 99 },
     //6.5 - 7.5
     { gender: "female", ageRange: [6.5, 7.5], weight: 5.954272, percentile: 3 },
     { gender: "female", ageRange: [6.5, 7.5], weight: 6.130641, percentile: 5 },
@@ -474,6 +519,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [6.5, 7.5], weight: 8.605636, percentile: 90 },
     { gender: "female", ageRange: [6.5, 7.5], weight: 8.951544, percentile: 95 },
     { gender: "female", ageRange: [6.5, 7.5], weight: 9.180938, percentile: 97 },
+    { gender: "female", ageRange: [6.5, 7.5], weight: 849.6177, percentile: 99 },
     // 7.5 - 8.5
     { gender: "female", ageRange: [7.5, 8.5], weight: 6.352668, percentile: 3 },
     { gender: "female", ageRange: [7.5, 8.5], weight: 6.533373, percentile: 5 },
@@ -484,6 +530,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [7.5, 8.5], weight: 9.109878, percentile: 90 },
     { gender: "female", ageRange: [7.5, 8.5], weight: 9.476009, percentile: 95 },
     { gender: "female", ageRange: [7.5, 8.5], weight: 9.719621, percentile: 97 },
+    { gender: "female", ageRange: [7.5, 8.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [8.5, 9.5], weight: 6.720328, percentile: 3 },
     { gender: "female", ageRange: [8.5, 9.5], weight: 6.904886, percentile: 5 },
@@ -494,6 +541,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [8.5, 9.5], weight: 9.573546, percentile: 90 },
     { gender: "female", ageRange: [8.5, 9.5], weight: 9.95848, percentile: 95 },
     { gender: "female", ageRange: [8.5, 9.5], weight: 10.21539, percentile: 97 },
+    { gender: "female", ageRange: [8.5, 9.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [9.5, 10.5], weight: 7.059732, percentile: 3 },
     { gender: "female", ageRange: [9.5, 10.5], weight: 7.247736, percentile: 5 },
@@ -504,6 +552,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [9.5, 10.5], weight: 10.00079	, percentile: 90 },
     { gender: "female", ageRange: [9.5, 10.5], weight: 10.40335, percentile: 95 },
     { gender: "female", ageRange: [9.5, 10.5], weight: 10.6728, percentile: 97 },
+    { gender: "female", ageRange: [9.5, 10.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [10.5, 11.5], weight: 7.373212, percentile: 3 },
     { gender: "female", ageRange: [10.5, 11.5], weight: 7.564327, percentile: 5 },
@@ -514,6 +563,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [10.5, 11.5], weight: 10.39545, percentile: 90 },
     { gender: "female", ageRange: [10.5, 11.5], weight: 10.8147, percentile: 95 },
     { gender: "female", ageRange: [10.5, 11.5], weight: 11.09607, percentile: 97 },
+    { gender: "female", ageRange: [10.5, 11.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [11.5, 12.5], weight: 7.662959, percentile: 3 },
     { gender: "female", ageRange: [11.5, 12.5], weight: 7.856916, percentile: 5 },
@@ -524,6 +574,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [11.5, 12.5], weight: 10.76106, percentile: 90 },
     { gender: "female", ageRange: [11.5, 12.5], weight: 11.19625, percentile: 95 },
     { gender: "female", ageRange: [11.5, 12.5], weight: 11.48908, percentile: 97 },
+    { gender: "female", ageRange: [11.5, 12.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [12.5, 13.5], weight: 7.93103, percentile: 3 },
     { gender: "female", ageRange: [12.5, 13.5], weight: 8.127621, percentile: 5 },
@@ -534,6 +585,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [12.5, 13.5], weight: 11.10089, percentile: 90 },
     { gender: "female", ageRange: [12.5, 13.5], weight: 11.55145, percentile: 95 },
     { gender: "female", ageRange: [12.5, 13.5], weight: 11.85539, percentile: 97 },
+    { gender: "female", ageRange: [12.5, 13.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [13.5, 14.5], weight: 8.179356, percentile: 3 },
     { gender: "female", ageRange: [13.5, 14.5], weight: 8.378425, percentile: 5 },
@@ -544,6 +596,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [13.5, 14.5], weight: 11.41792, percentile: 90 },
     { gender: "female", ageRange: [13.5, 14.5], weight: 11.88348, percentile: 95 },
     { gender: "female", ageRange: [13.5, 14.5], weight: 12.19829, percentile: 97 },
+    { gender: "female", ageRange: [13.5, 14.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [14.5, 15.5], weight: 8.409744, percentile: 3 },
     { gender: "female", ageRange: [14.5, 15.5], weight: 8.611186, percentile: 5 },
@@ -554,6 +607,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [14.5, 15.5], weight: 11.71491, percentile: 90 },
     { gender: "female", ageRange: [14.5, 15.5], weight: 12.19522	, percentile: 95 },
     { gender: "female", ageRange: [14.5, 15.5], weight: 12.52078, percentile: 97 },
+    { gender: "female", ageRange: [14.5, 15.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [15.5, 16.5], weight: 8.623887, percentile: 3 },
     { gender: "female", ageRange: [15.5, 16.5], weight: 8.827638, percentile: 5 },
@@ -564,6 +618,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [15.5, 16.5], weight: 11.99438, percentile: 90 },
     { gender: "female", ageRange: [15.5, 16.5], weight: 12.48934	, percentile: 95 },
     { gender: "female", ageRange: [15.5, 16.5], weight: 12.82561, percentile: 97 },
+    { gender: "female", ageRange: [15.5, 16.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [16.5, 17.5], weight: 8.82337, percentile: 3 },
     { gender: "female", ageRange: [16.5, 17.5], weight: 9.029399, percentile: 5 },
@@ -574,6 +629,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [16.5, 17.5], weight: 12.25862, percentile: 90 },
     { gender: "female", ageRange: [16.5, 17.5], weight: 12.76825	, percentile: 95 },
     { gender: "female", ageRange: [16.5, 17.5], weight: 13.11527, percentile: 97 },
+    { gender: "female", ageRange: [16.5, 17.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [17.5, 18.5], weight: 9.009668, percentile: 3 },
     { gender: "female", ageRange: [17.5, 18.5], weight: 9.21798, percentile: 5 },
@@ -584,6 +640,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [17.5, 18.5], weight: 12.50974, percentile: 90 },
     { gender: "female", ageRange: [17.5, 18.5], weight: 13.03415	, percentile: 95 },
     { gender: "female", ageRange: [17.5, 18.5], weight: 13.39204, percentile: 97 },
+    { gender: "female", ageRange: [17.5, 18.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [18.5, 19.5], weight: 9.18416, percentile: 3 },
     { gender: "female", ageRange: [18.5, 19.5], weight: 9.394782, percentile: 5 },
@@ -594,6 +651,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [18.5, 19.5], weight: 12.74964, percentile: 90 },
     { gender: "female", ageRange: [18.5, 19.5], weight: 13.28904	, percentile: 95 },
     { gender: "female", ageRange: [18.5, 19.5], weight: 13.65799, percentile: 97 },
+    { gender: "female", ageRange: [18.5, 19.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [19.5, 20.5], weight: 9.348127, percentile: 3 },
     { gender: "female", ageRange: [19.5, 20.5], weight: 9.56111, percentile: 5 },
@@ -604,6 +662,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [19.5, 20.5], weight: 12.98004, percentile: 90 },
     { gender: "female", ageRange: [19.5, 20.5], weight: 13.53473	, percentile: 95 },
     { gender: "female", ageRange: [19.5, 20.5], weight: 13.91497, percentile: 97 },
+    { gender: "female", ageRange: [19.5, 20.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [20.5, 21.5], weight: 9.50276, percentile: 3 },
     { gender: "female", ageRange: [20.5, 21.5], weight: 9.71817, percentile: 5 },
@@ -614,6 +673,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [20.5, 21.5], weight: 13.2025, percentile: 90 },
     { gender: "female", ageRange: [20.5, 21.5], weight: 13.77284	, percentile: 95 },
     { gender: "female", ageRange: [20.5, 21.5], weight: 14.16467, percentile: 97 },
+    { gender: "female", ageRange: [20.5, 21.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [21.5, 22.5], weight: 9.649162, percentile: 3 },
     { gender: "female", ageRange: [21.5, 22.5], weight: 9.867081, percentile: 5 },
@@ -624,6 +684,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [21.5, 22.5], weight: 13.41844, percentile: 90 },
     { gender: "female", ageRange: [21.5, 22.5], weight: 14.00484, percentile: 95 },
     { gender: "female", ageRange: [21.5, 22.5], weight: 14.40858, percentile: 97 },
+    { gender: "female", ageRange: [21.5, 22.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [22.5, 23.5], weight: 9.788355, percentile: 3 },
     { gender: "female", ageRange: [22.5, 23.5], weight: 10.00887, percentile: 5 },
@@ -634,6 +695,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [22.5, 23.5], weight: 13.62911, percentile: 90 },
     { gender: "female", ageRange: [22.5, 23.5], weight: 14.23205	, percentile: 95 },
     { gender: "female", ageRange: [22.5, 23.5], weight: 14.64807, percentile: 97 },
+    { gender: "female", ageRange: [22.5, 23.5], weight: 849.6177, percentile: 99},
 
     { gender: "female", ageRange: [23.5, 24.5], weight: 9.921281, percentile: 3 },
     { gender: "female", ageRange: [23.5, 24.5], weight: 10.1445, percentile: 5 },
@@ -644,6 +706,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [23.5, 24.5], weight: 13.83564	, percentile: 90 },
     { gender: "female", ageRange: [23.5, 24.5], weight: 14.45561	, percentile: 95 },
     { gender: "female", ageRange: [23.5, 24.5], weight: 14.88432, percentile: 97 },
+    { gender: "female", ageRange: [23.5, 24.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [24.5, 25.5], weight: 10.04881, percentile: 3 },
     { gender: "female", ageRange: [24.5, 25.5], weight: 10.27483, percentile: 5 },
@@ -654,6 +717,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [24.5, 25.5], weight: 14.03902	, percentile: 90 },
     { gender: "female", ageRange: [24.5, 25.5], weight: 14.67659	, percentile: 95 },
     { gender: "female", ageRange: [24.5, 25.5], weight: 15.11839, percentile: 97 },
+    { gender: "female", ageRange: [24.5, 25.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [25.5, 26.5], weight: 10.17173, percentile: 3 },
     { gender: "female", ageRange: [25.5, 26.5], weight: 10.40066, percentile: 5 },
@@ -664,6 +728,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [25.5, 26.5], weight: 14.24017		, percentile: 90 },
     { gender: "female", ageRange: [25.5, 26.5], weight: 14.89587	, percentile: 95 },
     { gender: "female", ageRange: [25.5, 26.5], weight: 15.35122, percentile: 97 },
+    { gender: "female", ageRange: [25.5, 26.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [26.5, 27.5], weight: 10.29079, percentile: 3 },
     { gender: "female", ageRange: [26.5, 27.5], weight: 10.52274, percentile: 5 },
@@ -674,6 +739,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [26.5, 27.5], weight: 14.43984, percentile: 90 },
     { gender: "female", ageRange: [26.5, 27.5], weight: 15.11428, percentile: 95 },
     { gender: "female", ageRange: [26.5, 27.5], weight: 15.58363, percentile: 97 },
+    { gender: "female", ageRange: [26.5, 27.5], weight: 849.6177, percentile: 99},
 
     
     { gender: "female", ageRange: [27.5, 28.5], weight: 10.40664, percentile: 3 },
@@ -685,6 +751,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [27.5, 28.5], weight: 14.63873, percentile: 90 },
     { gender: "female", ageRange: [27.5, 28.5], weight: 15.33249, percentile: 95 },
     { gender: "female", ageRange: [27.5, 28.5], weight: 15.81632, percentile: 97 },
+    { gender: "female", ageRange: [27.5, 28.5], weight: 849.6177, percentile: 99},
 
     { gender: "female", ageRange: [28.5, 29.5], weight: 10.5199, percentile: 3 },
     { gender: "female", ageRange: [28.5, 29.5], weight: 10.75819, percentile: 5 },
@@ -695,6 +762,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [28.5, 29.5], weight: 14.83743, percentile: 90 },
     { gender: "female", ageRange: [28.5, 29.5], weight: 15.55113	, percentile: 95 },
     { gender: "female", ageRange: [28.5, 29.5], weight: 16.0499, percentile: 97 },
+    { gender: "female", ageRange: [28.5, 29.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [29.5, 30.5], weight: 10.63112, percentile: 3 },
     { gender: "female", ageRange: [29.5, 30.5], weight: 10.87273, percentile: 5 },
@@ -705,6 +773,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [29.5, 30.5], weight: 15.03646, percentile: 90 },
     { gender: "female", ageRange: [29.5, 30.5], weight: 15.7707, percentile: 95 },
     { gender: "female", ageRange: [29.5, 30.5], weight: 16.28491, percentile: 97 },
+    { gender: "female", ageRange: [29.5, 30.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [30.5, 31.5], weight: 10.74078, percentile: 3 },
     { gender: "female", ageRange: [30.5, 31.5], weight: 10.98581, percentile: 5 },
@@ -715,6 +784,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [30.5, 31.5], weight: 15.23626, percentile: 90 },
     { gender: "female", ageRange: [30.5, 31.5], weight: 15.99164, percentile: 95 },
     { gender: "female", ageRange: [30.5, 31.5], weight: 16.52176, percentile: 97 },
+    { gender: "female", ageRange: [30.5, 31.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [31.5, 32.5], weight: 10.84935, percentile: 3 },
     { gender: "female", ageRange: [31.5, 32.5], weight: 11.09789, percentile: 5 },
@@ -725,6 +795,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [31.5, 32.5], weight: 15.43719, percentile: 90 },
     { gender: "female", ageRange: [31.5, 32.5], weight: 16.21432, percentile: 95 },
     { gender: "female", ageRange: [31.5, 32.5], weight: 16.76085, percentile: 97 },
+    { gender: "female", ageRange: [31.5, 32.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [32.5, 33.5], weight: 10.95722, percentile: 3 },
     { gender: "female", ageRange: [32.5, 33.5], weight: 11.20934, percentile: 5 },
@@ -735,6 +806,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [32.5, 33.5], weight: 15.63957, percentile: 90 },
     { gender: "female", ageRange: [32.5, 33.5], weight: 16.43904, percentile: 95 },
     { gender: "female", ageRange: [32.5, 33.5], weight: 17.00245, percentile: 97 },
+    { gender: "female", ageRange: [32.5, 33.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [33.5, 34.5], weight: 11.06475, percentile: 3 },
     { gender: "female", ageRange: [33.5, 34.5], weight: 11.32054, percentile: 5 },
@@ -745,6 +817,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [33.5, 34.5], weight: 15.84365, percentile: 90 },
     { gender: "female", ageRange: [33.5, 34.5], weight: 16.66605, percentile: 95 },
     { gender: "female", ageRange: [33.5, 34.5], weight: 17.24681, percentile: 97 },
+    { gender: "female", ageRange: [33.5, 34.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [34.5, 35.5], weight: 11.17225, percentile: 3 },
     { gender: "female", ageRange: [34.5, 35.5], weight: 11.43177, percentile: 5 },
@@ -755,6 +828,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [34.5, 35.5], weight: 16.04963, percentile: 90 },
     { gender: "female", ageRange: [34.5, 35.5], weight: 16.89553, percentile: 95 },
     { gender: "female", ageRange: [34.5, 35.5], weight: 17.49412, percentile: 97 },
+    { gender: "female", ageRange: [34.5, 35.5], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [35.5, 36], weight: 11.28	, percentile: 3 },
     { gender: "female", ageRange: [35.5, 36], weight: 11.54332, percentile: 5 },
@@ -765,6 +839,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [35.5, 36], weight: 16.25767, percentile: 90 },
     { gender: "female", ageRange: [35.5, 36], weight: 17.12762, percentile: 95 },
     { gender: "female", ageRange: [35.5, 36], weight: 17.7445, percentile: 97 },
+    { gender: "female", ageRange: [35.5, 36], weight: 849.6177, percentile: 99 },
 
     { gender: "female", ageRange: [36, 37], weight: 11.33404	, percentile: 3 },
     { gender: "female", ageRange: [36, 37], weight: 11.59929, percentile: 5 },
@@ -775,6 +850,7 @@ function percentileWeight() {
     { gender: "female", ageRange: [36, 37], weight: 16.3625, percentile: 90 },
     { gender: "female", ageRange: [36, 37], weight: 17.24469, percentile: 95 },
     { gender: "female", ageRange: [36, 37], weight: 17.87089, percentile: 97 },
+    { gender: "female", ageRange: [36, 37], weight: 849.6177, percentile: 99 },
     
   ];
 
@@ -791,11 +867,16 @@ function percentileWeight() {
   // Display the result
   if (matchedCondition) {
     document.getElementById("currentAge").innerText =
-      "Kilo oranı " + matchedCondition.percentile +". " + "pesentilde. \n";
+      "Kilo oranı " + matchedCondition.percentile +". " + "persentilde. \n";
       if(matchedCondition.percentile > 95 || matchedCondition.percentile < 5){
         document.getElementById("currentAge").innerText +=
-      "İleri incelem icin dokturnuza danışın.";
+      "İleri inceleme icin dokturnuza danışın.";
     }
+    else if(matchedCondition.percentile > 10 && matchedCondition.percentile < 90 ){
+        document.getElementById("currentAge").innerText +=
+      "Persentil değerleri yasa göre standard değer aralığında";
+    }
+   
   } else {
     document.getElementById("currentAge").innerText =
       "Percentile not found for the provided inputs.";
@@ -823,6 +904,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [0, 0.5], height: 53.36153, percentile: 90 },
       { gender: "male", ageRange: [0, 0.5], height: 54.30721, percentile: 95 },
       { gender: "male", ageRange: [0, 0.5], height: 54.919, percentile: 97 },
+      { gender: "male", ageRange: [0, 0.5], height: 849.6177, percentile: 99 },
       // 0.5 - 1.5
       { gender: "male", ageRange: [0.5, 1.5], height: 47.97812, percentile: 3 },
       { gender: "male", ageRange: [0.5, 1.5], height: 48.55809, percentile: 5 },
@@ -833,6 +915,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [0.5, 1.5], height: 56.03444, percentile: 90 },
       { gender: "male", ageRange: [0.5, 1.5], height: 56.99908, percentile: 95 },
       { gender: "male", ageRange: [0.5, 1.5], height: 57.62984, percentile: 97 },
+      { gender: "male", ageRange: [0.5, 1.5], height: 849.6177, percentile: 99 },
       // 1.5 - 2.5
       { gender: "male", ageRange: [1.5, 2.5], height: 52.19859, percentile: 3 },
       { gender: "male", ageRange: [1.5, 2.5], height: 52.72611, percentile: 5 },
@@ -843,6 +926,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [1.5, 2.5], height: 59.9664, percentile: 90 },
       { gender: "male", ageRange: [1.5, 2.5], height: 60.96465, percentile: 95 },
       { gender: "male", ageRange: [1.5, 2.5], height: 61.62591, percentile: 97 },
+      { gender: "male", ageRange: [1.5, 2.5], height: 849.6177, percentile: 99 },
       // 2.5 - 3.5
   
       { gender: "male", ageRange: [2.5, 3.5], height: 55.26322, percentile: 3 },
@@ -854,6 +938,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [2.5, 3.5], height: 62.98158, percentile: 90 },
       { gender: "male", ageRange: [2.5, 3.5], height: 64.00789, percentile: 95 },
       { gender: "male", ageRange: [2.5, 3.5], height: 64.69241, percentile: 97 },
+      { gender: "male", ageRange: [2.5, 3.5], height: 849.6177, percentile: 99},
       // 3.5 - 4.5
   
       { gender: "male", ageRange: [3.5, 4.5], height: 57.73049, percentile: 3 },
@@ -865,6 +950,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [3.5, 4.5], height: 65.49858, percentile: 90 },
       { gender: "male", ageRange: [3.5, 4.5], height: 66.54889, percentile: 95 },
       { gender: "male", ageRange: [3.5, 4.5], height: 67.2519, percentile: 97 },
+      { gender: "male", ageRange: [3.5, 4.5], height: 849.6177, percentile: 99 },
       // 4.5 - 5.5
       { gender: "male", ageRange: [4.5, 5.5], height: 59.82569	, percentile: 3 },
       { gender: "male", ageRange: [4.5, 5.5], height: 60.33647, percentile: 5 },
@@ -875,6 +961,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [4.5, 5.5], height: 67.69405, percentile: 90 },
       { gender: "male", ageRange: [4.5, 5.5], height: 68.76538, percentile: 95 },
       { gender: "male", ageRange: [4.5, 5.5], height: 69.48354, percentile: 97 },
+      { gender: "male", ageRange: [4.5, 5.5], height: 849.6177, percentile: 99 },
       //5.5 - 6.5
       { gender: "male", ageRange: [5.5, 6.5], height: 61.66384, percentile: 3 },
       { gender: "male", ageRange: [5.5, 6.5], height: 62.18261, percentile: 5 },
@@ -885,6 +972,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [5.5, 6.5], height: 69.66122, percentile: 90 },
       { gender: "male", ageRange: [5.5, 6.5], height: 70.75128, percentile: 95 },
       { gender: "male", ageRange: [5.5, 6.5], height: 71.48218, percentile: 97 },
+      { gender: "male", ageRange: [5.5, 6.5], height: 849.6177, percentile: 99 },
       //6.5 - 7.5
       { gender: "male", ageRange: [6.5, 7.5], height: 63.31224, percentile: 3 },
       { gender: "male", ageRange: [6.5, 7.5], height: 63.84166, percentile: 5 },
@@ -895,6 +983,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [6.5, 7.5], height: 71.45609, percentile: 90 },
       { gender: "male", ageRange: [6.5, 7.5], height: 72.56307, percentile: 95 },
       { gender: "male", ageRange: [6.5, 7.5], height: 73.30488, percentile: 97 },
+      { gender: "male", ageRange: [6.5, 7.5], height: 849.6177, percentile: 99 },
       // 7.5 - 8.5
       { gender: "male", ageRange: [7.5, 8.5], height: 64.81395, percentile: 3 },
       { gender: "male", ageRange: [7.5, 8.5], height: 65.35584, percentile: 5 },
@@ -905,6 +994,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [7.5, 8.5], height: 73.11525, percentile: 90 },
       { gender: "male", ageRange: [7.5, 8.5], height: 74.23767, percentile: 95 },
       { gender: "male", ageRange: [7.5, 8.5], height: 74.98899, percentile: 97 },
+      { gender: "male", ageRange: [7.5, 8.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [8.5, 9.5], height: 66.19833, percentile: 3 },
       { gender: "male", ageRange: [8.5, 9.5], height: 66.75398, percentile: 5 },
@@ -915,6 +1005,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [8.5, 9.5], height: 74.6641, percentile: 90 },
       { gender: "male", ageRange: [8.5, 9.5], height: 75.80074, percentile: 95 },
       { gender: "male", ageRange: [8.5, 9.5], height: 76.56047, percentile: 97 },
+      { gender: "male", ageRange: [8.5, 9.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [9.5, 10.5], height: 67.48635, percentile: 3 },
       { gender: "male", ageRange: [9.5, 10.5], height: 68.05675, percentile: 5 },
@@ -925,6 +1016,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [9.5, 10.5], height: 76.1211, percentile: 90 },
       { gender: "male", ageRange: [9.5, 10.5], height: 77.27095, percentile: 95 },
       { gender: "male", ageRange: [9.5, 10.5], height: 78.03819, percentile: 97 },
+      { gender: "male", ageRange: [9.5, 10.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [10.5, 11.5], height: 68.6936, percentile: 3 },
       { gender: "male", ageRange: [10.5, 11.5], height: 69.27949, percentile: 5 },
@@ -935,6 +1027,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [10.5, 11.5], height: 77.50016, percentile: 90 },
       { gender: "male", ageRange: [10.5, 11.5], height: 78.66234, percentile: 95 },
       { gender: "male", ageRange: [10.5, 11.5], height: 79.43637, percentile: 97 },
+      { gender: "male", ageRange: [10.5, 11.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [11.5, 12.5], height: 69.832, percentile: 3 },
       { gender: "male", ageRange: [11.5, 12.5], height: 70.43397, percentile: 5 },
@@ -945,6 +1038,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [11.5, 12.5], height: 78.81202, percentile: 90 },
       { gender: "male", ageRange: [11.5, 12.5], height: 79.98578, percentile: 95 },
       { gender: "male", ageRange: [11.5, 12.5], height: 80.76602, percentile: 97 },
+      { gender: "male", ageRange: [11.5, 12.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [12.5, 13.5], height: 70.91088, percentile: 3 },
       { gender: "male", ageRange: [12.5, 13.5], height: 71.52941, percentile: 5 },
@@ -955,6 +1049,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [12.5, 13.5], height: 80.0652, percentile: 90 },
       { gender: "male", ageRange: [12.5, 13.5], height: 81.2499, percentile: 95 },
       { gender: "male", ageRange: [12.5, 13.5], height: 82.03585, percentile: 97 },
+      { gender: "male", ageRange: [12.5, 13.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [13.5, 14.5], height: 71.9377, percentile: 3 },
       { gender: "male", ageRange: [13.5, 14.5], height: 72.57318, percentile: 5 },
@@ -965,6 +1060,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [13.5, 14.5], height: 81.2666, percentile: 90 },
       { gender: "male", ageRange: [13.5, 14.5], height: 82.46167, percentile: 95 },
       { gender: "male", ageRange: [13.5, 14.5], height: 83.25292, percentile: 97 },
+      { gender: "male", ageRange: [13.5, 14.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [14.5, 15.5], height: 72.91853, percentile: 3 },
       { gender: "male", ageRange: [14.5, 15.5], height: 73.5713, percentile: 5 },
@@ -975,6 +1071,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [14.5, 15.5], height: 82.42185, percentile: 90 },
       { gender: "male", ageRange: [14.5, 15.5], height: 83.6268	, percentile: 95 },
       { gender: "male", ageRange: [14.5, 15.5], height: 84.42302, percentile: 97 },
+      { gender: "male", ageRange: [14.5, 15.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [15.5, 16.5], height: 73.85839, percentile: 3 },
       { gender: "male", ageRange: [15.5, 16.5], height: 74.52871, percentile: 5 },
@@ -985,6 +1082,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [15.5, 16.5], height: 83.53568, percentile: 90 },
       { gender: "male", ageRange: [15.5, 16.5], height: 84.75006	, percentile: 95 },
       { gender: "male", ageRange: [15.5, 16.5], height: 85.55095, percentile: 97 },
+      { gender: "male", ageRange: [15.5, 16.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [16.5, 17.5], height: 74.76147, percentile: 3 },
       { gender: "male", ageRange: [16.5, 17.5], height: 75.44958, percentile: 5 },
@@ -995,6 +1093,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [16.5, 17.5], height: 84.61204, percentile: 90 },
       { gender: "male", ageRange: [16.5, 17.5], height: 85.83547	, percentile: 95 },
       { gender: "male", ageRange: [16.5, 17.5], height: 86.64078, percentile: 97 },
+      { gender: "male", ageRange: [16.5, 17.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [17.5, 18.5], height: 75.63132, percentile: 3 },
       { gender: "male", ageRange: [17.5, 18.5], height: 76.33742, percentile: 5 },
@@ -1005,6 +1104,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [17.5, 18.5], height: 85.65431, percentile: 90 },
       { gender: "male", ageRange: [17.5, 18.5], height: 86.88645	, percentile: 95 },
       { gender: "male", ageRange: [17.5, 18.5], height: 87.69597, percentile: 97 },
+      { gender: "male", ageRange: [17.5, 18.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [18.5, 19.5], height: 76.47096, percentile: 3 },
       { gender: "male", ageRange: [18.5, 19.5], height: 77.19523, percentile: 5 },
@@ -1015,6 +1115,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [18.5, 19.5], height: 86.66541, percentile: 90 },
       { gender: "male", ageRange: [18.5, 19.5], height: 87.90595	, percentile: 95 },
       { gender: "male", ageRange: [18.5, 19.5], height: 88.7195, percentile: 97 },
+      { gender: "male", ageRange: [18.5, 19.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [19.5, 20.5], height: 77.283, percentile: 3 },
       { gender: "male", ageRange: [19.5, 20.5], height: 78.0256, percentile: 5 },
@@ -1025,6 +1126,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [19.5, 20.5], height: 87.64786, percentile: 90 },
       { gender: "male", ageRange: [19.5, 20.5], height: 88.89652	, percentile: 95 },
       { gender: "male", ageRange: [19.5, 20.5], height: 89.71393, percentile: 97 },
+      { gender: "male", ageRange: [19.5, 20.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [20.5, 21.5], height: 78.06971, percentile: 3 },
       { gender: "male", ageRange: [20.5, 21.5], height: 78.83077, percentile: 5 },
@@ -1035,6 +1137,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [20.5, 21.5], height: 88.60385, percentile: 90 },
       { gender: "male", ageRange: [20.5, 21.5], height: 89.86038	, percentile: 95 },
       { gender: "male", ageRange: [20.5, 21.5], height: 90.68153, percentile: 97 },
+      { gender: "male", ageRange: [20.5, 21.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [21.5, 22.5], height: 78.83308, percentile: 3 },
       { gender: "male", ageRange: [21.5, 22.5], height: 79.61271, percentile: 5 },
@@ -1045,6 +1148,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [21.5, 22.5], height: 89.53533, percentile: 90 },
       { gender: "male", ageRange: [21.5, 22.5], height: 90.79951	, percentile: 95 },
       { gender: "male", ageRange: [21.5, 22.5], height: 91.62428, percentile: 97 },
+      { gender: "male", ageRange: [21.5, 22.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [22.5, 23.5], height: 79.57485, percentile: 3 },
       { gender: "male", ageRange: [22.5, 23.5], height: 80.37315, percentile: 5 },
@@ -1055,6 +1159,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [22.5, 23.5], height: 90.44402, percentile: 90 },
       { gender: "male", ageRange: [22.5, 23.5], height: 91.71563	, percentile: 95 },
       { gender: "male", ageRange: [22.5, 23.5], height: 92.54392, percentile: 97 },
+      { gender: "male", ageRange: [22.5, 23.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [23.5, 24.5], height: 80.29656, percentile: 3 },
       { gender: "male", ageRange: [23.5, 24.5], height: 81.11363, percentile: 5 },
@@ -1065,6 +1170,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [23.5, 24.5], height: 91.33143	, percentile: 90 },
       { gender: "male", ageRange: [23.5, 24.5], height: 92.61031, percentile: 95 },
       { gender: "male", ageRange: [23.5, 24.5], height: 93.44203, percentile: 97 },
+      { gender: "male", ageRange: [23.5, 24.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [24.5, 25.5], height: 80.99959, percentile: 3 },
       { gender: "male", ageRange: [24.5, 25.5], height: 81.83552, percentile: 5 },
@@ -1075,6 +1181,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [24.5, 25.5], height: 92.19893	, percentile: 90 },
       { gender: "male", ageRange: [24.5, 25.5], height: 93.48491	, percentile: 95 },
       { gender: "male", ageRange: [24.5, 25.5], height: 94.31998, percentile: 97 },
+      { gender: "male", ageRange: [24.5, 25.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [25.5, 26.5], height: 81.74464, percentile: 3 },
       { gender: "male", ageRange: [25.5, 26.5], height: 82.58135, percentile: 5 },
@@ -1085,6 +1192,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [25.5, 26.5], height: 93.07143	, percentile: 90 },
       { gender: "male", ageRange: [25.5, 26.5], height: 94.38775	, percentile: 95 },
       { gender: "male", ageRange: [25.5, 26.5], height: 95.24419, percentile: 97 },
+      { gender: "male", ageRange: [25.5, 26.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [26.5, 27.5], height: 82.47365, percentile: 3 },
       { gender: "male", ageRange: [26.5, 27.5], height: 83.31105, percentile: 5 },
@@ -1095,6 +1203,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [26.5, 27.5], height: 93.91817, percentile: 90 },
       { gender: "male", ageRange: [26.5, 27.5], height: 95.263, percentile: 95 },
       { gender: "male", ageRange: [26.5, 27.5], height: 96.13962, percentile: 97 },
+      { gender: "male", ageRange: [26.5, 27.5], height: 849.6177, percentile: 99 },
   
       
       { gender: "male", ageRange: [27.5, 28.5], height: 83.18812, percentile: 3 },
@@ -1106,6 +1215,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [27.5, 28.5], height: 94.74064, percentile: 90 },
       { gender: "male", ageRange: [27.5, 28.5], height: 96.1121, percentile: 95 },
       { gender: "male", ageRange: [27.5, 28.5], height: 97.00763, percentile: 97 },
+      { gender: "male", ageRange: [27.5, 28.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [28.5, 29.5], height: 83.88931, percentile: 3 },
       { gender: "male", ageRange: [28.5, 29.5], height: 84.72769, percentile: 5 },
@@ -1116,6 +1226,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [28.5, 29.5], height: 95.54016, percentile: 90 },
       { gender: "male", ageRange: [28.5, 29.5], height: 96.93639, percentile: 95 },
       { gender: "male", ageRange: [28.5, 29.5], height: 97.84957, percentile: 97 },
+      { gender: "male", ageRange: [28.5, 29.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [29.5, 30.5], height: 84.57826, percentile: 3 },
       { gender: "male", ageRange: [29.5, 30.5], height: 85.41688, percentile: 5 },
@@ -1126,6 +1237,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [29.5, 30.5], height: 96.318, percentile: 90 },
       { gender: "male", ageRange: [29.5, 30.5], height: 97.73717, percentile: 95 },
       { gender: "male", ageRange: [29.5, 30.5], height: 98.66677, percentile: 97 },
+      { gender: "male", ageRange: [29.5, 30.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [30.5, 31.5], height: 85.25589, percentile: 3 },
       { gender: "male", ageRange: [30.5, 31.5], height: 86.09452, percentile: 5 },
@@ -1136,6 +1248,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [30.5, 31.5], height: 97.07531, percentile: 90 },
       { gender: "male", ageRange: [30.5, 31.5], height: 98.51569, percentile: 95 },
       { gender: "male", ageRange: [30.5, 31.5], height: 99.46052, percentile: 97 },
+      { gender: "male", ageRange: [30.5, 31.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [31.5, 32.5], height: 85.92294, percentile: 3 },
       { gender: "male", ageRange: [31.5, 32.5], height: 86.76134, percentile: 5 },
@@ -1146,6 +1259,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [31.5, 32.5], height: 97.81324, percentile: 90 },
       { gender: "male", ageRange: [31.5, 32.5], height: 99.27318, percentile: 95 },
       { gender: "male", ageRange: [31.5, 32.5], height: 100.2321, percentile: 97 },
+      { gender: "male", ageRange: [31.5, 32.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [32.5, 33.5], height: 86.58009, percentile: 3 },
       { gender: "male", ageRange: [32.5, 33.5], height: 87.41799, percentile: 5 },
@@ -1156,6 +1270,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [32.5, 33.5], height: 98.53287, percentile: 90 },
       { gender: "male", ageRange: [32.5, 33.5], height: 100.0109, percentile: 95 },
       { gender: "male", ageRange: [32.5, 33.5], height: 100.9829, percentile: 97 },
+      { gender: "male", ageRange: [32.5, 33.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [33.5, 34.5], height: 87.22791	, percentile: 3 },
       { gender: "male", ageRange: [33.5, 34.5], height: 88.06503, percentile: 5 },
@@ -1166,6 +1281,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [33.5, 34.5], height: 99.23531, percentile: 90 },
       { gender: "male", ageRange: [33.5, 34.5], height: 100.73, percentile: 95 },
       { gender: "male", ageRange: [33.5, 34.5], height: 101.7142, percentile: 97 },
+      { gender: "male", ageRange: [33.5, 34.5], height: 849.6177, percentile: 99 },
   
       { gender: "male", ageRange: [34.5, 35.5], height: 87.86696, percentile: 3 },
       { gender: "male", ageRange: [34.5, 35.5], height: 88.70301, percentile: 5 },
@@ -1176,6 +1292,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [34.5, 35.5], height: 99.92162, percentile: 90 },
       { gender: "male", ageRange: [34.5, 35.5], height: 101.4318, percentile: 95 },
       { gender: "male", ageRange: [34.5, 35.5], height: 102.4274, percentile: 97 },
+      { gender: "male", ageRange: [34.5, 35.5], height: 849.6177, percentile: 99},
   
       { gender: "male", ageRange: [35.5, 36.5], height: 88.49774, percentile: 3 },
       { gender: "male", ageRange: [35.5, 36.5], height: 89.33242, percentile: 5 },
@@ -1186,6 +1303,7 @@ function percentileHeight() {
       { gender: "male", ageRange: [35.5, 36.5], height: 100.5929, percentile: 90 },
       { gender: "male", ageRange: [35.5, 36.5], height: 102.1174, percentile: 95 },
       { gender: "male", ageRange: [35.5, 36.5], height: 103.1237, percentile: 97 },
+      { gender: "male", ageRange: [35.5, 36.5], height: 849.6177, percentile: 99 },
   
       // female
   
@@ -1198,6 +1316,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [0, 0.5], height: 52.7025, percentile: 90 },
       { gender: "female", ageRange: [0, 0.5], height: 53.77291, percentile: 95 },
       { gender: "female", ageRange: [0, 0.5], height: 54.49527, percentile: 97 },
+      { gender: "female", ageRange: [0, 0.5], height: 849.6177, percentile: 99 },
       // 0.5 - 1.5
       { gender: "female", ageRange: [0.5, 1.5], height: 47.46916, percentile: 3 },
       { gender: "female", ageRange: [0.5, 1.5], height: 47.96324, percentile: 5 },
@@ -1208,6 +1327,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [0.5, 1.5], height: 54.96222, percentile: 90 },
       { gender: "female", ageRange: [0.5, 1.5], height: 55.96094, percentile: 95 },
       { gender: "female", ageRange: [0.5, 1.5], height: 56.62728, percentile: 97 },
+      { gender: "female", ageRange: [0.5, 1.5], height: 849.6177, percentile: 99 },
       // 1.5 - 2.5
       { gender: "female", ageRange: [1.5, 2.5], height: 50.95701, percentile: 3 },
       { gender: "female", ageRange: [1.5, 2.5], height: 51.47996, percentile: 5 },
@@ -1218,6 +1338,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [1.5, 2.5], height: 58.45612, percentile: 90 },
       { gender: "female", ageRange: [1.5, 2.5], height: 59.38911, percentile: 95 },
       { gender: "female", ageRange: [1.5, 2.5], height: 60.00338, percentile: 97 },
+      { gender: "female", ageRange: [1.5, 2.5], height: 849.6177, percentile: 99 },
       // 2.5 - 3.5
   
       { gender: "female", ageRange: [2.5, 3.5], height: 53.62925, percentile: 3 },
@@ -1229,6 +1350,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [2.5, 3.5], height: 61.24306, percentile: 90 },
       { gender: "female", ageRange: [2.5, 3.5], height: 62.15166, percentile: 95 },
       { gender: "female", ageRange: [2.5, 3.5], height: 62.74547, percentile: 97 },
+      { gender: "female", ageRange: [2.5, 3.5], height: 849.6177, percentile: 99 },
       // 3.5 - 4.5
   
       { gender: "female", ageRange: [3.5, 4.5], height: 55.8594, percentile: 3 },
@@ -1240,6 +1362,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [3.5, 4.5], height: 63.62648, percentile: 90 },
       { gender: "female", ageRange: [3.5, 4.5], height: 64.52875, percentile: 95 },
       { gender: "female", ageRange: [3.5, 4.5], height: 65.115776, percentile: 97 },
+      { gender: "female", ageRange: [3.5, 4.5], height: 849.6177, percentile: 99 },
       // 4.5 - 5.5
       { gender: "female", ageRange: [4.5, 5.5], height: 57.8047, percentile: 3 },
       { gender: "female", ageRange: [4.5, 5.5], height: 58.40032, percentile: 5 },
@@ -1250,6 +1373,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [4.5, 5.5], height: 65.74096, percentile: 90 },
       { gender: "female", ageRange: [4.5, 5.5], height: 66.64653, percentile: 95 },
       { gender: "female", ageRange: [4.5, 5.5], height: 67.23398, percentile: 97 },
+      { gender: "female", ageRange: [4.5, 5.5], height: 849.6177, percentile: 99 },
       //5.5 - 6.5
       { gender: "female", ageRange: [5.5, 6.5], height: 59.54799, percentile: 3 },
       { gender: "female", ageRange: [5.5, 6.5], height: 60.16323, percentile: 5 },
@@ -1260,6 +1384,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [5.5, 6.5], height: 67.65995, percentile: 90 },
       { gender: "female", ageRange: [5.5, 6.5], height: 68.57452, percentile: 95 },
       { gender: "female", ageRange: [5.5, 6.5], height: 69.16668, percentile: 97 },
+      { gender: "female", ageRange: [5.5, 6.5], height: 849.6177, percentile: 99 },
       //6.5 - 7.5
       { gender: "female", ageRange: [6.5, 7.5], height: 61.13893, percentile: 3 },
       { gender: "female", ageRange: [6.5, 7.5], height: 61.77208, percentile: 5 },
@@ -1270,6 +1395,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [6.5, 7.5], height: 69.42868, percentile: 90 },
       { gender: "female", ageRange: [6.5, 7.5], height: 70.35587, percentile: 95 },
       { gender: "female", ageRange: [6.5, 7.5], height: 70.95545, percentile: 97 },
+      { gender: "female", ageRange: [6.5, 7.5], height: 849.6177, percentile: 99 },
       // 7.5 - 8.5
       { gender: "female", ageRange: [7.5, 8.5], height: 62.60993, percentile: 3 },
       { gender: "female", ageRange: [7.5, 8.5], height: 63.25958, percentile: 5 },
@@ -1280,6 +1406,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [7.5, 8.5], height: 71.07731, percentile: 90 },
       { gender: "female", ageRange: [7.5, 8.5], height: 72.01952, percentile: 95 },
       { gender: "female", ageRange: [7.5, 8.5], height: 72.62835, percentile: 97 },
+      { gender: "female", ageRange: [7.5, 8.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [8.5, 9.5], height: 63.98348, percentile: 3 },
       { gender: "female", ageRange: [8.5, 9.5], height: 64.64845, percentile: 5 },
@@ -1290,6 +1417,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [8.5, 9.5], height: 72.62711, percentile: 90 },
       { gender: "female", ageRange: [8.5, 9.5], height: 73.58601, percentile: 95 },
       { gender: "female", ageRange: [8.5, 9.5], height: 74.20532, percentile: 97 },
+      { gender: "female", ageRange: [8.5, 9.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [9.5, 10.5], height: 65.2759, percentile: 3 },
       { gender: "female", ageRange: [9.5, 10.5], height: 65.9552, percentile: 5 },
@@ -1300,6 +1428,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [9.5, 10.5], height: 74.09378	, percentile: 90 },
       { gender: "female", ageRange: [9.5, 10.5], height: 75.0705, percentile: 95 },
       { gender: "female", ageRange: [9.5, 10.5], height: 75.70118, percentile: 97 },
+      { gender: "female", ageRange: [9.5, 10.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [10.5, 11.5], height: 66.49948, percentile: 3 },
       { gender: "female", ageRange: [10.5, 11.5], height: 67.19226, percentile: 5 },
@@ -1310,6 +1439,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [10.5, 11.5], height: 75.48923, percentile: 90 },
       { gender: "female", ageRange: [10.5, 11.5], height: 76.4846, percentile: 95 },
       { gender: "female", ageRange: [10.5, 11.5], height: 77.12729, percentile: 97 },
+      { gender: "female", ageRange: [10.5, 11.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [11.5, 12.5], height: 67.66371, percentile: 3 },
       { gender: "female", ageRange: [11.5, 12.5], height: 68.36925, percentile: 5 },
@@ -1320,6 +1450,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [11.5, 12.5], height: 76.82282, percentile: 90 },
       { gender: "female", ageRange: [11.5, 12.5], height: 77.83742, percentile: 95 },
       { gender: "female", ageRange: [11.5, 12.5], height: 78.49257, percentile: 97 },
+      { gender: "female", ageRange: [11.5, 12.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [12.5, 13.5], height: 68.77613, percentile: 3 },
       { gender: "female", ageRange: [12.5, 13.5], height: 69.4938, percentile: 5 },
@@ -1330,6 +1461,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [12.5, 13.5], height: 78.10202, percentile: 90 },
       { gender: "female", ageRange: [12.5, 13.5], height: 79.13625, percentile: 95 },
       { gender: "female", ageRange: [12.5, 13.5], height: 79.80419, percentile: 97 },
+      { gender: "female", ageRange: [12.5, 13.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [13.5, 14.5], height: 69.8428, percentile: 3 },
       { gender: "female", ageRange: [13.5, 14.5], height: 70.57207, percentile: 5 },
@@ -1340,6 +1472,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [13.5, 14.5], height: 79.3329, percentile: 90 },
       { gender: "female", ageRange: [13.5, 14.5], height: 80.38705, percentile: 95 },
       { gender: "female", ageRange: [13.5, 14.5], height: 81.06801, percentile: 97 },
+      { gender: "female", ageRange: [13.5, 14.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [14.5, 15.5], height: 70.86874, percentile: 3 },
       { gender: "female", ageRange: [14.5, 15.5], height: 71.60911, percentile: 5 },
@@ -1350,6 +1483,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [14.5, 15.5], height: 80.5205, percentile: 90 },
       { gender: "female", ageRange: [14.5, 15.5], height: 81.59475	, percentile: 95 },
       { gender: "female", ageRange: [14.5, 15.5], height: 82.28891, percentile: 97 },
+      { gender: "female", ageRange: [14.5, 15.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [15.5, 16.5], height: 71.85807, percentile: 3 },
       { gender: "female", ageRange: [15.5, 16.5], height: 72.60914, percentile: 5 },
@@ -1360,6 +1494,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [15.5, 16.5], height: 81.66903, percentile: 90 },
       { gender: "female", ageRange: [15.5, 16.5], height: 82.7635	, percentile: 95 },
       { gender: "female", ageRange: [15.5, 16.5], height: 83.47098, percentile: 97 },
+      { gender: "female", ageRange: [15.5, 16.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [16.5, 17.5], height: 72.81433, percentile: 3 },
       { gender: "female", ageRange: [16.5, 17.5], height: 73.57571	, percentile: 5 },
@@ -1370,6 +1505,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [16.5, 17.5], height: 82.78208, percentile: 90 },
       { gender: "female", ageRange: [16.5, 17.5], height: 83.89683	, percentile: 95 },
       { gender: "female", ageRange: [16.5, 17.5], height: 84.6177, percentile: 97 },
+      { gender: "female", ageRange: [16.5, 17.5], height: 849.6177, percentile: 99 },
   
       { gender: "female", ageRange: [17.5, 18.5], height: 73.74047, percentile: 3 },
       { gender: "female", ageRange: [17.5, 18.5], height: 74.51184, percentile: 5 },
@@ -1380,6 +1516,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [17.5, 18.5], height: 83.86269, percentile: 90 },
       { gender: "female", ageRange: [17.5, 18.5], height: 84.99774	, percentile: 95 },
       { gender: "female", ageRange: [17.5, 18.5], height: 85.73205, percentile: 97 },
+      { gender: "female", ageRange: [17.5, 18.5], height: 89.73205, percentile: 99 },
   
       { gender: "female", ageRange: [18.5, 19.5], height: 74.63908, percentile: 3 },
       { gender: "female", ageRange: [18.5, 19.5], height: 75.42012, percentile: 5 },
@@ -1390,6 +1527,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [18.5, 19.5], height: 84.91353, percentile: 90 },
       { gender: "female", ageRange: [18.5, 19.5], height: 86.06887	, percentile: 95 },
       { gender: "female", ageRange: [18.5, 19.5], height: 86.81663, percentile: 97 },
+      { gender: "female", ageRange: [18.5, 19.5], height: 869.81663, percentile: 99 },
   
       { gender: "female", ageRange: [19.5, 20.5], height: 75.51237	, percentile: 3 },
       { gender: "female", ageRange: [19.5, 20.5], height: 76.30282, percentile: 5 },
@@ -1400,6 +1538,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [19.5, 20.5], height: 85.93689	, percentile: 90 },
       { gender: "female", ageRange: [19.5, 20.5], height: 87.11249	, percentile: 95 },
       { gender: "female", ageRange: [19.5, 20.5], height: 87.8737, percentile: 97 },
+      { gender: "female", ageRange: [19.5, 20.5], height: 872.8737, percentile: 99 },
   
       { gender: "female", ageRange: [20.5, 21.5], height: 76.36229, percentile: 3 },
       { gender: "female", ageRange: [20.5, 21.5], height: 77.16191, percentile: 5 },
@@ -1410,6 +1549,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [20.5, 21.5], height: 86.93481, percentile: 90 },
       { gender: "female", ageRange: [20.5, 21.5], height: 88.13061	, percentile: 95 },
       { gender: "female", ageRange: [20.5, 21.5], height: 88.90526, percentile: 97 },
+      { gender: "female", ageRange: [20.5, 21.5], height: 889.90526, percentile: 99 },
   
       { gender: "female", ageRange: [21.5, 22.5], height: 77.19056, percentile: 3 },
       { gender: "female", ageRange: [21.5, 22.5], height: 77.9991, percentile: 5 },
@@ -1420,6 +1560,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [21.5, 22.5], height: 87.90908, percentile: 90 },
       { gender: "female", ageRange: [21.5, 22.5], height: 89.125, percentile: 95 },
       { gender: "female", ageRange: [21.5, 22.5], height: 89.91305, percentile: 97 },
+      { gender: "female", ageRange: [21.5, 22.5], height: 899.91305, percentile: 99 },
   
       { gender: "female", ageRange: [22.5, 23.5], height: 77.99868, percentile: 3 },
       { gender: "female", ageRange: [22.5, 23.5], height: 78.81595, percentile: 5 },
@@ -1430,6 +1571,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [22.5, 23.5], height: 88.86127, percentile: 90 },
       { gender: "female", ageRange: [22.5, 23.5], height: 90.09723	, percentile: 95 },
       { gender: "female", ageRange: [22.5, 23.5], height: 90.89866, percentile: 97 },
+      { gender: "female", ageRange: [22.5, 23.5], height: 902.89866, percentile: 99 },
   
       { gender: "female", ageRange: [23.5, 24.5], height: 78.78801, percentile: 3 },
       { gender: "female", ageRange: [23.5, 24.5], height: 79.61381, percentile: 5 },
@@ -1440,6 +1582,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [23.5, 24.5], height: 89.79282	, percentile: 90 },
       { gender: "female", ageRange: [23.5, 24.5], height: 91.04873	, percentile: 95 },
       { gender: "female", ageRange: [23.5, 24.5], height: 91.86347, percentile: 97 },
+      { gender: "female", ageRange: [23.5, 24.5], height: 911.86347, percentile: 99 },
   
       { gender: "female", ageRange: [24.5, 25.5], height: 79.55974, percentile: 3 },
       { gender: "female", ageRange: [24.5, 25.5], height: 80.39391, percentile: 5 },
@@ -1450,6 +1593,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [24.5, 25.5], height: 90.70499	, percentile: 90 },
       { gender: "female", ageRange: [24.5, 25.5], height: 91.98074	, percentile: 95 },
       { gender: "female", ageRange: [24.5, 25.5], height: 92.80876, percentile: 97 },
+      { gender: "female", ageRange: [24.5, 25.5], height: 929.80876, percentile: 99 },
   
       { gender: "female", ageRange: [25.5, 26.5], height: 80.33998, percentile: 3 },
       { gender: "female", ageRange: [25.5, 26.5], height: 81.18804, percentile: 5 },
@@ -1460,6 +1604,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [25.5, 26.5], height: 91.67718		, percentile: 90 },
       { gender: "female", ageRange: [25.5, 26.5], height: 92.97574	, percentile: 95 },
       { gender: "female", ageRange: [25.5, 26.5], height: 93.81864, percentile: 97 },
+      { gender: "female", ageRange: [25.5, 26.5], height: 932.81864, percentile: 99 },
   
       { gender: "female", ageRange: [26.5, 27.5], height: 81.11332, percentile: 3 },
       { gender: "female", ageRange: [26.5, 27.5], height: 81.97223, percentile: 5 },
@@ -1470,6 +1615,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [26.5, 27.5], height: 92.61658, percentile: 90 },
       { gender: "female", ageRange: [26.5, 27.5], height: 93.93693, percentile: 95 },
       { gender: "female", ageRange: [26.5, 27.5], height: 94.79426, percentile: 97 },
+      { gender: "female", ageRange: [26.5, 27.5], height: 949.79426, percentile: 99 },
   
       
       { gender: "female", ageRange: [27.5, 28.5], height: 81.87334, percentile: 3 },
@@ -1481,6 +1627,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [27.5, 28.5], height: 93.52227, percentile: 90 },
       { gender: "female", ageRange: [27.5, 28.5], height: 94.86339, percentile: 95 },
       { gender: "female", ageRange: [27.5, 28.5], height: 95.73464, percentile: 97 },
+      { gender: "female", ageRange: [27.5, 28.5], height: 951.73464, percentile: 979 },
   
       { gender: "female", ageRange: [28.5, 29.5], height: 82.61506, percentile: 3 },
       { gender: "female", ageRange: [28.5, 29.5], height: 83.48951, percentile: 5 },
@@ -1491,6 +1638,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [28.5, 29.5], height: 94.39371, percentile: 90 },
       { gender: "female", ageRange: [28.5, 29.5], height: 95.75464	, percentile: 95 },
       { gender: "female", ageRange: [28.5, 29.5], height: 96.63928, percentile: 97 },
+      { gender: "female", ageRange: [28.5, 29.5], height: 962.63928, percentile: 99 },
   
       { gender: "female", ageRange: [29.5, 30.5], height: 83.33473, percentile: 3 },
       { gender: "female", ageRange: [29.5, 30.5], height: 84.21496, percentile: 5 },
@@ -1501,6 +1649,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [29.5, 30.5], height: 95.23082, percentile: 90 },
       { gender: "female", ageRange: [29.5, 30.5], height: 96.61061, percentile: 95 },
       { gender: "female", ageRange: [29.5, 30.5], height: 97.50808, percentile: 97 },
+      { gender: "female", ageRange: [29.5, 30.5], height: 979.50808, percentile: 99 },
   
       { gender: "female", ageRange: [30.5, 31.5], height: 84.02972, percentile: 3 },
       { gender: "female", ageRange: [30.5, 31.5], height: 84.91494, percentile: 5 },
@@ -1511,6 +1660,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [30.5, 31.5], height: 96.03385, percentile: 90 },
       { gender: "female", ageRange: [30.5, 31.5], height: 97.43164, percentile: 95 },
       { gender: "female", ageRange: [30.5, 31.5], height: 98.34139, percentile: 97 },
+      { gender: "female", ageRange: [30.5, 31.5], height: 988.34139, percentile: 99 },
   
       { gender: "female", ageRange: [31.5, 32.5], height: 84.69837, percentile: 3 },
       { gender: "female", ageRange: [31.5, 32.5], height: 85.58809, percentile: 5 },
@@ -1521,6 +1671,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [31.5, 32.5], height: 96.80343, percentile: 90 },
       { gender: "female", ageRange: [31.5, 32.5], height: 98.2184, percentile: 95 },
       { gender: "female", ageRange: [31.5, 32.5], height: 99.13993, percentile: 97 },
+      { gender: "female", ageRange: [31.5, 32.5], height: 999.13993, percentile: 99 },
   
       { gender: "female", ageRange: [32.5, 33.5], height: 85.33987, percentile: 3 },
       { gender: "female", ageRange: [32.5, 33.5], height: 86.23379, percentile: 5 },
@@ -1531,6 +1682,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [32.5, 33.5], height: 97.54052, percentile: 90 },
       { gender: "female", ageRange: [32.5, 33.5], height: 98.97193, percentile: 95 },
       { gender: "female", ageRange: [32.5, 33.5], height: 99.90473, percentile: 97 },
+      { gender: "female", ageRange: [32.5, 33.5], height: 999.90473, percentile: 99 },
   
       { gender: "female", ageRange: [33.5, 34.5], height: 85.95413, percentile: 3 },
       { gender: "female", ageRange: [33.5, 34.5], height: 86.85208, percentile: 5 },
@@ -1541,6 +1693,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [33.5, 34.5], height: 98.24636, percentile: 90 },
       { gender: "female", ageRange: [33.5, 34.5], height: 99.69353, percentile: 95 },
       { gender: "female", ageRange: [33.5, 34.5], height: 100.6372, percentile: 97 },
+      { gender: "female", ageRange: [33.5, 34.5], height: 1000.6372, percentile: 99 },
   
       { gender: "female", ageRange: [34.5, 35.5], height: 86.54167, percentile: 3 },
       { gender: "female", ageRange: [34.5, 35.5], height: 87.44359, percentile: 5 },
@@ -1551,6 +1704,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [34.5, 35.5], height: 98.92246, percentile: 90 },
       { gender: "female", ageRange: [34.5, 35.5], height: 100.3848, percentile: 95 },
       { gender: "female", ageRange: [34.5, 35.5], height: 101.3388, percentile: 97 },
+      { gender: "female", ageRange: [34.5, 35.5], height: 1010.3388, percentile: 99 },
   
       { gender: "female", ageRange: [35.5, 36.5], height: 87.10349	, percentile: 3 },
       { gender: "female", ageRange: [35.5, 36.5], height: 88.00937, percentile: 5 },
@@ -1561,6 +1715,7 @@ function percentileHeight() {
       { gender: "female", ageRange: [35.5, 36.5], height: 99.57056, percentile: 90 },
       { gender: "female", ageRange: [35.5, 36.5], height: 101.0475, percentile: 95 },
       { gender: "female", ageRange: [35.5, 36.5], height: 102.0116, percentile: 97 },
+      { gender: "female", ageRange: [35.5, 36.5], height: 40000, percentile: 99 },
   
       
       
@@ -1583,6 +1738,10 @@ function percentileHeight() {
         if(matchedCondition.percentile > 95 || matchedCondition.percentile < 5){
             document.getElementById("currentAge").innerText +=
           "İleri incelem icin dokturnuza danışın.";}
+          else if(matchedCondition.percentile > 10 && matchedCondition.percentile < 90 ){
+            document.getElementById("currentAge").innerText +=
+          "Persentil değerleri yasa göre standard değer aralığında";
+        }
     } else {
       document.getElementById("currentAge").innerText =
         "Percentile not found for the provided inputs.";
