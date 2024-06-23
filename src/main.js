@@ -1,16 +1,11 @@
-// Define funtion to get calculated Age
 function getDOB() {
-    // Get the input values
     var dob = new Date(document.getElementById("inputDob").value);
     var currentDate = new Date(document.getElementById("cdate").value);
 
-    // Calculate the difference in milliseconds
     var diffTime = Math.abs(currentDate - dob);
 
-    // Convert the difference to days
     var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-    // Display the age
     document.getElementById("currentAge").innerHTML =
         "Çocuğun yaşı:  " +
         Math.floor(diffDays / 365) +
@@ -21,7 +16,6 @@ function getDOB() {
         " gün." +
         "<br/>";
 
-    // Display vaccination reminders based on the age in days
     if (diffDays <= 0) {
         alert("En acil zamanda Hepatit B 1 doz aşısını yaptırınız");
         displayVaccinationReminder(0, dob, "Hepatit B 1 doz ");
@@ -70,19 +64,16 @@ function getDOB() {
 function checkup() {
     document.getElementById("currentAge").innerHTML = "";
 
-    // Get the input values
     var dob = new Date(document.getElementById("inputDob").value);
     var currentDate = new Date(document.getElementById("cdate").value);
   
     var options = { year: "numeric", month: "long", day: "numeric" };
     var formattedDob = dob.toLocaleDateString("tr-TR", options);
     var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
-  
-    // Calculate the difference in days
+
     var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
   
     if (diffDays >= 0 && diffDays <= 7) {
-      // For babies younger than 1 week
       document.getElementById("currentAge").innerHTML =
         "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.";
     } else if (diffDays <= 30) {
@@ -117,25 +108,19 @@ function checkup() {
   }
   
   function displayCheckupReminder(days, dob, reminder) {
-    // Calculate the date for the checkup reminder
     var checkupDate = new Date(dob);
     checkupDate.setDate(checkupDate.getDate() + days);
-  
-    // Check if the checkup date is in the future
     var currentDate = new Date();
     if (checkupDate > currentDate) {
-      // Format the date to Turkish
       var options = { year: "numeric", month: "long", day: "numeric" };
       var formattedCheckupDate = checkupDate.toLocaleDateString("tr-TR", options);
-  
-      // Display the reminder
+
       document.getElementById("currentAge").innerHTML +=
         "<br/>" + "**" + formattedCheckupDate + " tarihinde " + reminder + "yapılmalıdır" + "**" + "<br/>";
     }
   }
 
 function percentile() {
-  // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
   var currentDate = new Date(document.getElementById("cdate").value);
 
@@ -143,13 +128,11 @@ function percentile() {
   var formattedDob = dob.toLocaleDateString("tr-TR", options);
   var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
 
-  // Calculate the difference in months
   var diffMonths =
     (currentDate.getFullYear() - dob.getFullYear()) * 12 +
     currentDate.getMonth() -
     dob.getMonth();
 
-  // Display the age
   document.getElementById("currentAge").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffMonths / 12) +
@@ -165,18 +148,15 @@ function percentile() {
 }
 
 function displayFutureVaccinationReminder(months, dob, vaccineName) {
-  // Calculate the date for the vaccination reminder
   var vaccinationDate = new Date(dob);
   vaccinationDate.setMonth(vaccinationDate.getMonth() + months);
 
-  // Format the date to Turkish
   var options = { year: "numeric", month: "long", day: "numeric" };
   var formattedVaccinationDate = vaccinationDate.toLocaleDateString(
     "tr-TR",
     options
   );
 
-  // Display the reminder
   document.getElementById("currentAge").innerHTML +=
     "<br/>" +
     "**" +
@@ -198,13 +178,11 @@ function age() {
   var formattedDob = dob.toLocaleDateString("tr-TR", options);
   var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
 
-  // Calculate the difference in months
   var diffMonths =
     (currentDate.getFullYear() - dob.getFullYear()) * 12 +
     currentDate.getMonth() -
     dob.getMonth();
 
-  // Display the age
   document.getElementById("currentAge").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffMonths / 12) +
@@ -219,7 +197,6 @@ function age() {
     "<br/>";
 }
 
-// Function to provide default date value
 function currentDate() {
   console.log(formatted());
   let d = document.getElementById("cdate");
@@ -237,5 +214,4 @@ function short(num) {
   return num.toString().padStart(2, "0");
 }
 
-// Calling current date function to set default date value
 currentDate();
