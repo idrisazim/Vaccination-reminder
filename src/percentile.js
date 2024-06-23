@@ -2,11 +2,10 @@ function percentileWeight() {
   var dob = new Date(document.getElementById("inputDob").value);
   var today = new Date();
   var ageMilliseconds = today - dob;
-  var ageMonths = ageMilliseconds / (1000 * 60 * 60 * 24 * 30); // Approximation for months
+  var ageMonths = ageMilliseconds / (1000 * 60 * 60 * 24 * 30);
   var weight = parseFloat(document.getElementById("kilo").value);
   var gender = document.getElementById("gender").value;
 
-  // Define conditions and corresponding percentiles
   var conditions = [
     { gender: "male", ageRange: [0, 0.5], weight: 2.355451, percentile: 3 },
     { gender: "male", ageRange: [0, 0.5], weight: 2.526904, percentile: 5 },
@@ -864,7 +863,6 @@ function percentileWeight() {
     );
   });
 
-  // Display the result
   if (matchedCondition) {
     document.getElementById("currentAge").innerText = "";
 
@@ -920,11 +918,10 @@ function percentileHeight() {
     var dob = new Date(document.getElementById("inputDob").value);
     var today = new Date();
     var ageMilliseconds = today - dob;
-    var ageMonths = ageMilliseconds / (1000 * 60 * 60 * 24 * 30); // Approximation for months
+    var ageMonths = ageMilliseconds / (1000 * 60 * 60 * 24 * 30); 
     var height = parseFloat(document.getElementById("height").value);
     var gender = document.getElementById("gender").value;
-  
-    // Define conditions and corresponding percentiles
+
     var conditions = [
       { gender: "male", ageRange: [0, 0.5], height: 44.9251, percentile: 3 },
       { gender: "male", ageRange: [0, 0.5], height: 45.56841, percentile: 5 },
@@ -1752,7 +1749,6 @@ function percentileHeight() {
       
     ];
   
-    // Find matching condition
     var matchedCondition = conditions.find(function (condition) {
       return (
         condition.gender === gender &&
@@ -1762,7 +1758,6 @@ function percentileHeight() {
       );
     });
   
-    // Display the result
     if (matchedCondition) {
       document.getElementById("currentAge").innerText = "";
     
