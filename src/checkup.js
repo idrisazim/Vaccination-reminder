@@ -8,13 +8,11 @@ function age() {
   var formattedDob = dob.toLocaleDateString("tr-TR", options);
   var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
 
-  // Calculate the difference in months
   var diffMonths =
     (currentDate.getFullYear() - dob.getFullYear()) * 12 +
     currentDate.getMonth() -
     dob.getMonth();
 
-  // Display the age
   document.getElementById("currentAge").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffMonths / 12) +
@@ -29,7 +27,6 @@ function age() {
     "<br/>";
 }
 
-// Function to provide default date value
 function currentDate() {
   console.log(formatted());
   let d = document.getElementById("cdate");
@@ -47,13 +44,11 @@ function short(num) {
   return num.toString().padStart(2, "0");
 }
 
-// Calling current date function to set default date value
 currentDate();
 
 function checkupFuture() {
   reminderr = "";
 
-  // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
   var currentDate = new Date(document.getElementById("cdate").value);
 
@@ -61,7 +56,6 @@ function checkupFuture() {
   var formattedDob = dob.toLocaleDateString("tr-TR", options);
   var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
 
-  // Calculate the difference in days
   var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
 
   document.getElementById("currentAge").innerHTML =
@@ -75,7 +69,6 @@ function checkupFuture() {
   "<br/>";
 
   if (diffDays >= 0 && diffDays <= 7) {
-    // For babies younger than 1 week
     document.getElementById("currentAge").innerHTML =
       "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve İşitme taraması yapılmalıdır. ";
       reminderr += "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve İşitme taraması yapılmalıdır.\n";
@@ -117,14 +110,12 @@ function checkupFuture() {
   function checkup() {
     reminderr = "";
 
-    // Get the input values
     var dob = new Date(document.getElementById("inputDob").value);
     var currentDate = new Date(document.getElementById("cdate").value);
     var options = { year: "numeric", month: "long", day: "numeric" };
     var formattedDob = dob.toLocaleDateString("tr-TR", options);
     var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
-  
-    // Calculate the difference in days
+
     var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
 
     document.getElementById("currentAge").innerHTML =
@@ -138,8 +129,7 @@ function checkupFuture() {
     "<br/>";
   
     if (diffDays >= 0 && diffDays <= 7) {
-      
-      // For babies younger than 1 week
+
       document.getElementById("currentAge").innerHTML =
         "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü ve işitme taraması yapılmalıdır.";
         reminderr += "Bebeğin ilk haftalık 3-5 günlük ilk kontrolü yapılmalıdır.\n";
@@ -179,18 +169,14 @@ function checkupFuture() {
   }
   
   function displayCheckupReminder(days, dob, reminder) {
-    // Calculate the date for the checkup reminder
     var checkupDate = new Date(dob);
     checkupDate.setDate(checkupDate.getDate() + days);
-  
-    // Check if the checkup date is in the future
+
     var currentDate = new Date();
     if (checkupDate > currentDate) {
-      // Format the date to Turkish
       var options = { year: "numeric", month: "long", day: "numeric" };
       var formattedCheckupDate = checkupDate.toLocaleDateString("tr-TR", options);
   
-      // Display the reminder
       document.getElementById("currentAge").innerHTML +=
         "<br/>" + "**" + formattedCheckupDate + " tarihinde " + reminder + "yapılmalıdır" + "**" + "<br/>";
         reminderr += "**" + formattedCheckupDate + " tarihinde " + reminder + "yapılmalıdır" + "**\n";
