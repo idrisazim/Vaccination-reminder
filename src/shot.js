@@ -1,9 +1,6 @@
 var reminder = "";
 var reminderAll = "";
 
-
-  
-
 function age() {
   var dob = new Date(document.getElementById("inputDob").value);
   var currentDate = new Date(document.getElementById("cdate").value);
@@ -12,13 +9,11 @@ function age() {
   var formattedDob = dob.toLocaleDateString("tr-TR", options);
   var formattedCurrentDate = currentDate.toLocaleDateString("tr-TR", options);
 
-  // Calculate the difference in months
   var diffMonths =
     (currentDate.getFullYear() - dob.getFullYear()) * 12 +
     currentDate.getMonth() -
     dob.getMonth();
 
-  // Display the age
   document.getElementById("currentAge2").innerHTML =
     "Çocuğun yaşı:  " +
     Math.floor(diffMonths / 12) +
@@ -33,7 +28,6 @@ function age() {
     "<br/>";
 }
 
-// Function to provide default date value
 function currentDate() {
   console.log(formatted());
   let d = document.getElementById("cdate");
@@ -51,17 +45,14 @@ function short(num) {
   return num.toString().padStart(2, "0");
 }
 
-// Calling current date function to set default date value
 currentDate();
 
 
 function getDOB() {
   reminder = "";
-  // Get the input values
   var dob = new Date(document.getElementById("inputDob").value);
   var currentDate = new Date(document.getElementById("cdate").value);
 
-  // Calculate the difference in days
   var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
 
   document.getElementById("currentAge2").innerHTML =
@@ -74,7 +65,6 @@ function getDOB() {
     " gün." +
     "<br/>";
 
-  // Initialize the output string
   var output = "Çocuğun yaşı: " +
     Math.floor(diffDays / 365) +
     " yıl " +
@@ -84,7 +74,6 @@ function getDOB() {
     " gün." +
     "<br/>";
 
-  // Define vaccine schedule in days
   var vaccineSchedule = {
     30: "Hepatit B 2. doz",
     60: "BCG(Verem)",
@@ -98,7 +87,6 @@ function getDOB() {
     4680: "Td Rapel",
   };
 
-  // Display the reminders based on the schedule
   for (var days in vaccineSchedule) {
     if (diffDays <= days) {
       if (diffDays <= 5) {
@@ -107,7 +95,7 @@ function getDOB() {
         reminder += "En acil zamanda " + vaccineSchedule[0] + " aşısını yaptırınız\n";
       }
       displayVaccinationReminder(days, dob, vaccineSchedule[days]);
-      break; // Exit the loop after finding the first reminder
+      break;
     }
   }
 
@@ -117,20 +105,15 @@ function getDOB() {
 
 
 function displayVaccinationReminder(days, dob, vaccineName) {
-  // Calculate the date for the vaccination reminder
   var vaccinationDate = new Date(dob);
   vaccinationDate.setDate(vaccinationDate.getDate() + parseInt(days));
 
-  // Format the date to Turkish
   var options = { year: "numeric", month: "long", day: "numeric" };
   var formattedVaccinationDate = vaccinationDate.toLocaleDateString(
     "tr-TR",
     options
   );
 
-  // Initialize the reminder string
-
-  // Display the reminder if the vaccination date is in the future
   if (vaccinationDate > new Date()) {
 
     document.getElementById("currentAge2").innerHTML +=
@@ -190,7 +173,6 @@ function getAllShots() {
   var currentDate = new Date(document.getElementById("cdate").value);
 
 
-  // Calculate the difference in days
   var diffDays = Math.floor((currentDate - dob) / (1000 * 60 * 60 * 24));
 
 
@@ -205,12 +187,10 @@ function getAllShots() {
     "<br/>";
 
 
-  // Calculate years, months, and remaining days
   var years = Math.floor(diffDays / 365);
   var months = Math.floor((diffDays % 365) / 30);
   var days = diffDays % 30;
 
-  // Define vaccine schedule in months
   var vaccineSchedule = {
     0: "Hepatit B 1. doz",
     1: "Hepatit B 2. doz",
@@ -225,13 +205,11 @@ function getAllShots() {
     156: "Td Rapel",
   };
 
-  // Create a container for the list of vaccinations
   var vaccinationListContainer = document.createElement("div");
   vaccinationListContainer.id = "vaccinationList";
-  vaccinationListContainer.style.maxHeight = "200px"; // Set the maximum height for the container
-  vaccinationListContainer.style.overflowY = "auto"; // Enable vertical scrolling
+  vaccinationListContainer.style.maxHeight = "200px"; 
+  vaccinationListContainer.style.overflowY = "auto";
 
-  // Append the container to the page
   document.getElementById("currentAge2").appendChild(vaccinationListContainer);
 
 
@@ -241,11 +219,11 @@ function getAllShots() {
       alert("En acil zamanda Hepatit B 1. doz aşısını yaptırınız");
       reminder += "En acil zamanda Hepatit B 1. doz aşısını yaptırınız\n";
       displayFutureVaccinationReminder(months, dob, vaccineSchedule[0], vaccinationListContainer);
-      break; // Exit the loop after finding the first reminder
+      break;
     }
   }
 }
-  // Display the reminders for future vaccinations
+
   for (var months in vaccineSchedule) {
     if ((years * 12 + parseInt(months)) >= diffDays / 30) {
       displayFutureVaccinationReminder(months, dob, vaccineSchedule[months], vaccinationListContainer);
@@ -255,18 +233,15 @@ function getAllShots() {
 }
 
 function displayFutureVaccinationReminder(months, dob, vaccineName, container) {
-  // Calculate the date for the vaccination reminder
   var vaccinationDate = new Date(dob);
   vaccinationDate.setMonth(vaccinationDate.getMonth() + parseInt(months));
 
-  // Format the date to Turkish
   var options = { year: "numeric", month: "long", day: "numeric" };
   var formattedVaccinationDate = vaccinationDate.toLocaleDateString(
     "tr-TR",
     options
   );
 
-  // Create a paragraph element for the reminder
   var reminderParagraph = document.createElement("p");
   reminderParagraph.textContent =
     "**" +
@@ -284,7 +259,6 @@ function displayFutureVaccinationReminder(months, dob, vaccineName, container) {
     vaccineName +
     " aşısını yaptırmalısınız" +
     "**\n";
-  // Append the paragraph to the container
   container.appendChild(reminderParagraph);
   
 }
