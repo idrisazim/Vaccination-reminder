@@ -5,54 +5,15 @@
   <title>Aşı hatırlatma projesi</title>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script type="module" src="register.js" defer></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="style.css">
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="src/menu.css">
 </head>
 <body>
-  
-<div class="wrapper">
-  <div class="title-text">
-    <div class="title login">Giriş Formu</div>
-    <div class="title signup">Kaydolun</div>
+  <div class="container">
+    <a href="src/percentile.html"><button type="button" class="button1">PERSENTİL HESAPLAMA</button></a>
+    <a href="src/shot.html"><button type="button" class="button2">Aşılar</button></a>
+    <a href="src/checkup.html"><button type="button" class="button3">Sağlık kontrol</button></a>
   </div>
-  <div class="form-container">
-    <div class="slide-controls">
-      <input type="radio" name="slide" id="login" checked>
-      <input type="radio" name="slide" id="signup">
-      <label for="login" class="slide login">Giriş</label>
-      <label for="signup" class="slide signup">Kaydol</label>
-      <div class="slider-tab"></div>
-    </div>
-    <div class="form-inner">
-      <form action="#" class="login">
-        <div class="field">
-          <input id="loginEmail" type="email" placeholder="Mail adresi" required>
-        </div>
-        <div class="field">
-          <input id="loginPassword" type="password" placeholder="Şifre" required>
-        </div>
-        <div class="pass-link"><a href="#">Şifreyi unuttunuz?</a></div>
-        <div class="field btn">
-          <div class="btn-layer"></div>
-          <input id="loginb" type="submit" value="Giriş yap">
-        </div>
-        <div class="signup-link">Üye değil misiniz? <a href="">Kaydolun</a></div>
-      </form>
-      <form action="#" class="signup">
-        <div class="field">
-          <input id="signupEmail" type="email" placeholder="Mail adresi" required>
-        </div>
-        <div class="field">
-          <input id="signupPassword" type="password" placeholder="Kaydol" required>
-        </div>
-        <div class="field btn">
-          <div class="btn-layer"></div>
-          <input id="signupb" type="submit" value="Kaydol">
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>
